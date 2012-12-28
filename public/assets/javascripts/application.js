@@ -5,21 +5,25 @@ var app = $.sammy(function(){
 
   this.get('#/transactional-media', function(context) {
     $('body').stop().scrollTo( $('#transactional_media'), 1500, {axis:'y',offset:{left: 0, top:-30 } } );
+    $('#right_nav li').removeClass('current');
     $('#right_nav li.transactional').addClass('current');
   });
   
   this.get('#/marketer', function(context) {
     $('body').stop().scrollTo( $('#marketer'), 1500, {axis:'y',offset:{left: 0, top:-80 } } );
+    $('#right_nav li').removeClass('current');
     $('#right_nav li.marketer').addClass('current');
   });
   
   this.get('#/about-us', function(context) {
     $('body').stop().scrollTo( $('#about_us'), 1500, {axis:'y',offset:{left: 0, top:-90 } } );
+    $('#right_nav li').removeClass('current');
     $('#right_nav li.about').addClass('current');
   });
   
   this.get('#/contact-us', function(context) {
     $('body').stop().scrollTo( $('#contact_guide'), 1500, {axis:'y',offset:{left: 0, top:-80 } } );
+    $('#right_nav li').removeClass('current');
     $('#right_nav li.contact').addClass('current');
   });
   
