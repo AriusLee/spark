@@ -1,3 +1,14 @@
+var app = $.sammy(function(){
+  this.get('#/', function(context) {
+    $('body').stop().scrollTo( $('#main'), 1500, {axis:'y',offset:{left: 0, top:0 } } );
+  });
+
+  this.get('#/transactional-media', function(context) {
+    $('body').stop().scrollTo( $('#transactional_media'), 1500, {axis:'y',offset:{left: 0, top:0 } } );
+  });
+});
+
+
 $(document).ready(function() {
   
   $('#right_nav').scrollspy({
@@ -49,4 +60,5 @@ $(document).ready(function() {
   });
   
   $("#home_slider").slides();
+  app.run("#/");
 });
