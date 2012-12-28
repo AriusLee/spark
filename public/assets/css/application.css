@@ -728,3 +728,25 @@ footer .divider {
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 
+
+
+#slider-com {
+  width: 960px;
+  margin-left: 10px;
+}
+
+.scroll {
+	height: 500px;
+	width: 740px;
+	overflow: auto;
+	overflow-x: hidden;
+	position: relative;
+	clear: left;
+	margin-top: 20px;
+
+}
+
+.scrollContainer div.panel {
+    padding: 20px;
+    width: 700px;
+}
