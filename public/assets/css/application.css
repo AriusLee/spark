@@ -252,46 +252,84 @@ header .divider {
 }
 
 #right_nav li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  text-align: right;
 }
 
 #right_nav li a {
+  padding: 4px 15px;
   cursor: pointer;
-  display: block;
+  display: inline-block;
+}
+
+#right_nav li:hover a,
+#right_nav li.current a {
+  border-radius: 15px;
+  box-shadow: 0 1px 2px 0 #000;
+  background: #45484d; /* Old browsers */
+  background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  
+}
+
+#right_nav li a .icon {
   width: 20px;
   height: 20px;
   background: url(../images/nav-sprite.png) no-repeat;
 }
 
-#right_nav li a.transactional {
+#right_nav li a .inner_text {
+  margin-right: 8px;
+  line-height: 20px;
+  color: #999;
+  font-weight: 300;
+  text-shadow: 0 -1px #000;
+  display: none;
+}
+
+#right_nav li:hover a .inner_text,
+#right_nav li.current a .inner_text {
+  display: inline-block;
+}
+
+#right_nav li a.transactional .icon {
   background-position: 0 -29px;
 }
 
-#right_nav li a.transactional:hover {
+#right_nav li a.transactional:hover .icon,
+#right_nav li.current a.transactional .icon {
   background-position: -20px -29px;
 }
 
-#right_nav li a.marketer {
+#right_nav li a.marketer .icon {
   background-position: -1px -87px;
 }
 
-#right_nav li a.marketer:hover {
+#right_nav li a.marketer:hover .icon,
+#right_nav li.current a.marketer .icon {
   background-position: -21px -87px;
 }
 
-#right_nav li a.about {
+#right_nav li a.about .icon {
   background-position: -1px -116px;
 }
 
-#right_nav li a.about:hover {
+#right_nav li a.about:hover .icon,
+#right_nav li.current a.about .icon {
   background-position: -21px -116px;
 }
 
-#right_nav li a.contact {
+#right_nav li a.contact .icon {
   background-position: -1px -145px;
 }
 
-#right_nav li a.contact:hover {
+#right_nav li a.contact:hover .icon,
+#right_nav li.current a.contact .icon {
   background-position: -21px -145px;
 }
 
