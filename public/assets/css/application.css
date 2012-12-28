@@ -550,7 +550,12 @@ header .divider {
   background: url(../images/bg-about-nav.png) repeat-x bottom;
 }
 
+.navigation li {
+  display: inline-block;
+}
+
 #about_nav a {
+  text-decoration: none;
   padding: 9px 25px 11px;
   height: 20px;
   font-size: 14px;
@@ -570,7 +575,7 @@ header .divider {
   color: #333;
 }
 
-#about_nav a.current {
+#about_nav a.selected {
   background: #fff;
   border: 1px solid #ccc;
   border-bottom: none;
@@ -614,6 +619,85 @@ header .divider {
 
 #about_us #team_wrapper .team_member p {
   font-size: 14px;
+}
+
+
+#slider-com {
+  width: 100%;
+}
+
+.scroll {
+	width: 940px;
+	overflow: auto;
+	overflow-x: hidden;
+	position: relative;
+	clear: left;
+	margin-top: 20px;
+
+}
+
+.scrollContainer div.panel {
+  width: 940px;
+}
+
+/* Press */
+table#news_table {
+  width: 938px;
+  margin-top: 15px;
+}
+
+table#news_table tr {
+  border: 1px solid #e2e2e2;
+}
+
+table#news_table tr.empty_row {
+  border: none !important;
+}
+
+table#news_table tr.empty_row td {
+  height: 10px;
+}
+
+table#news_table tr td.logo_col {
+  width: 180px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #e2e2e2;
+}
+
+table#news_table tr td.text_col {
+  padding: 10px;
+  -webkit-box-shadow: inset 2px 0 5px 0 #e0e0e0;
+  -moz-box-shadow: inset 2px 0 5px 0 #e0e0e0;
+  box-shadow: inset 2px 0 5px 0 #e0e0e0;
+}
+
+table#news_table tr td.text_col h3 {
+  color: #333;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+table#news_table tr td.text_col p {
+  font-size: 14px;
+  padding: 4px 0;
+}
+
+table#news_table tr td.text_col .time_stamp {
+  color: #999;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+p a {
+  color: #0071BC;
+  display: inline;
+}
+
+p a:hover {
+  color: #0071BC;
+  text-decoration: underline;
 }
 
 /* Marquee */
@@ -727,26 +811,3 @@ footer .divider {
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
-
-
-
-#slider-com {
-  width: 960px;
-  margin-left: 10px;
-}
-
-.scroll {
-	height: 500px;
-	width: 740px;
-	overflow: auto;
-	overflow-x: hidden;
-	position: relative;
-	clear: left;
-	margin-top: 20px;
-
-}
-
-.scrollContainer div.panel {
-    padding: 20px;
-    width: 700px;
-}
