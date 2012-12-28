@@ -494,6 +494,7 @@ header .divider {
 /* Marketer */
 #marketer {
   padding-top: 20px;
+  background: #f9f9f9;
 }
 
 #marketer .info_row {
