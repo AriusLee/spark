@@ -593,6 +593,14 @@ header .divider {
   font-weight: 300;
 }
 
+#about_us p a {
+  text-decoration: none;
+}
+
+#about_us p a:hover {
+  text-decoration: underline;
+}
+
 #about_us #team_wrapper {
   padding-top: 25px;
   padding-bottom: 35px;
@@ -698,6 +706,43 @@ p a {
 p a:hover {
   color: #0071BC;
   text-decoration: underline;
+}
+
+/* Careers */
+#careers .text_col {
+  width: 300px;
+}
+
+#careers h3 {
+  font-weight: normal;
+  font-size: 18px;
+  margin: 20px 0 10px;
+}
+
+#careers p {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#careers .jobs_col {
+  width: 590px;
+  margin-left: 40px;
+}
+
+.jobs_col .job_link {
+  width: 220px;
+  height: 43px;
+  background: url(../images/button-job.png) no-repeat;
+  text-decoration: none;
+  color: #4D4D4D;
+  font-size: 15px;
+  font-weight: 300;
+  padding-top: 18px;
+  padding-left: 19px;
+  padding-right: 41px;
+  text-shadow: 0 1px #fff;
+  margin: 0 10px 6px 0;
 }
 
 /* Marquee */
