@@ -80,6 +80,8 @@ $(document).ready(function() {
     }
   });
   
-  $("#home_slider").slides();
+  $("#home_slider").slides({
+    play: 5000
+  });
   app.run("#/");
 });
