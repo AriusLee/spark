@@ -416,10 +416,20 @@ header .divider {
 }
 
 /* Transactional Media */
-#transactional_media {
+#transactional_media #gift {
   min-height: 200px;
   width: 100%;
   background: url(../images/bg-transactional.png) repeat-y center #121a1c;
+  color: #e6e6e6;
+  -webkit-box-shadow: inset 0 2px 8px 0 rgba(0,0,0,0.6);
+  -moz-box-shadow: inset 0 2px 8px 0 rgba(0,0,0,0.6);
+  box-shadow: inset 0 2px 8px 0 rgba(0,0,0,0.6);
+}
+
+#transactional_media #how_incentives_works {
+  min-height: 200px;
+  width: 100%;
+  background: url(../images/bg-incentives.png) repeat-y center #100f08;
   color: #e6e6e6;
   -webkit-box-shadow: inset 0 2px 8px 0 rgba(0,0,0,0.6);
   -moz-box-shadow: inset 0 2px 8px 0 rgba(0,0,0,0.6);
@@ -436,11 +446,21 @@ header .divider {
   text-transform: capitalize;
 }
 
+#transactional_media #incentives h2 {
+  margin-bottom: 25px;
+}
+
 #transactional_media .info_row {
   padding-bottom: 15px;
   background: url(../images/dots.png) no-repeat center bottom;
   margin-bottom: 20px;
   text-align: center;
+}
+
+#transactional_media .info_row.last {
+  padding-bottom: 35px;
+  margin-bottom: 0;
+  background: none !important;
 }
 
 #transactional_media .text_col {
@@ -454,6 +474,38 @@ header .divider {
   font-size: 24px;
   font-weight: normal;
   padding-bottom: 10px;
+}
+
+#transactional_media #how_incentives_works h3 {
+  font-weight: 300;
+  text-align:left;
+  font-size: 18px;
+}
+
+#transactional_media .incentive_row {
+  padding-left: 55px;
+}
+
+#transactional_media #incentives .img_col {
+  height: auto;
+}
+
+#transactional_media #how_incentives_works .text_col p {
+  color: #B3B3B3;
+  padding-left: 55px;
+  font-size: 15px;
+}
+
+.number_bullet {
+  width: 45px;
+  height: 43px;
+  background: url(../images/number-bullet.png) no-repeat;
+  text-align: center;
+  line-height: 43px;
+  font-weight: normal;
+  font-size: 18px;
+  margin-left: -55px;
+  position: absolute;
 }
 
 #transactional_media .text_col p {
@@ -490,6 +542,94 @@ header .divider {
 .action_row {
   text-align: center;
   padding-bottom: 25px;
+}
+
+table.referrals_way {
+  width: 100%;
+  margin: 15px 0;
+}
+
+table.referrals_way td {
+  width: 33%;
+  text-align: left;
+}
+
+.referrals_way h5 {
+  color: #C69C6D;
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 20px;
+  background: url(../images/arrow.png) no-repeat;
+  background-position: 0 6px;
+}
+
+.referrals_way p {
+  color: #B3B3B3;
+  width: 250px;
+  font-size: 13px;
+  padding: 10px 15px 15px 0;
+}
+
+.referrals_way img.referral_image {
+  padding: 4px;
+  background: #000;
+}
+
+#incentives_advantage {
+  background: #000;
+  color: #fff;
+  height: 300px;
+}
+
+#incentives_advantage h2,
+#incentives_benefit h2 {
+  padding-top: 15px;
+}
+
+#incentives_benefit h2 {
+  color: #333333;
+}
+
+#incentives_benefit h3 {
+  color: #009245;
+  font-weight: normal;
+}
+
+#incentives_benefit p {
+  color: #808080;
+  padding: 6px 0 10px;
+}
+
+ul.benefit_list li {
+  padding-left: 50px;
+  background: url(../images/benefit-tick.png) no-repeat;
+  border-bottom: 1px solid #EAEAEA;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  background-position: 0 center;
+}
+
+ul.benefit_list li:last-child {
+  border-bottom: none;
+}
+
+#transactional_media #incentives #incentives_advantage h3 {
+  font-weight: normal !important;
+  font-size: 15px !important;
+  color: #e6e6e6;
+}
+
+#transactional_media #incentives #incentives_advantage p {
+  font-size: 15px !important;
+  color: #B3B3B3;
+  padding: 10px 0;
+}
+
+.advantage_1 {
+  padding-left: 450px;
+  background: url(../images/advantage-1.png) no-repeat left bottom;
+  height: 200px;
+  padding-top: 20px;
 }
 
 /* Marketer */
