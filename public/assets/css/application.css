@@ -581,8 +581,36 @@ table.referrals_way td {
   height: 300px;
 }
 
-#incentives_advantage h2 {
+#incentives_advantage h2,
+#incentives_benefit h2 {
   padding-top: 15px;
+}
+
+#incentives_benefit h2 {
+  color: #333333;
+}
+
+#incentives_benefit h3 {
+  color: #009245;
+  font-weight: normal;
+}
+
+#incentives_benefit p {
+  color: #808080;
+  padding: 6px 0 10px;
+}
+
+ul.benefit_list li {
+  padding-left: 50px;
+  background: url(../images/benefit-tick.png) no-repeat;
+  border-bottom: 1px solid #EAEAEA;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  background-position: 0 center;
+}
+
+ul.benefit_list li:last-child {
+  border-bottom: none;
 }
 
 #transactional_media #incentives #incentives_advantage h3 {
