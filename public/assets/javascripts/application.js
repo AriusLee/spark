@@ -83,7 +83,15 @@ $(document).ready(function() {
   $("#home_slider").slides({
     play: 5000,
     animationStart: function() {
-      alert("yoyo");
+      if ($('#gift').hasClass('hidden')) {
+        $('#gift').removeClass('hidden');
+        $('#incentives').addClass('hidden');
+      } else if ($('#incentives').hasClass('hidden')) {
+        $('#gift').addClass('hidden');
+        $('#incentives').removeClass('hidden');
+      } else {
+        console.log("Error, both class dont have hidden class");
+      }
     }
   });
   app.run("#/");
