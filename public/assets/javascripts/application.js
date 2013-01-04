@@ -81,7 +81,10 @@ $(document).ready(function() {
   });
   
   $("#home_slider").slides({
-    play: 5000
+    play: 5000,
+    animationStart: function() {
+      alert("yoyo");
+    }
   });
   app.run("#/");
 });
