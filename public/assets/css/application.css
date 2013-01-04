@@ -483,7 +483,8 @@ header .divider {
 }
 
 #transactional_media .incentive_row {
-  padding-left: 55px;
+  padding-left: 58px;
+  position: relative;
 }
 
 #transactional_media #incentives .img_col {
@@ -492,7 +493,7 @@ header .divider {
 
 #transactional_media #how_incentives_works .text_col p {
   color: #B3B3B3;
-  padding-left: 55px;
+  padding-left: 58px;
   font-size: 15px;
 }
 
@@ -504,7 +505,7 @@ header .divider {
   line-height: 43px;
   font-weight: normal;
   font-size: 18px;
-  margin-left: -55px;
+  left: 0;
   position: absolute;
 }
 

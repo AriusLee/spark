@@ -84,11 +84,11 @@ $(document).ready(function() {
     play: 5000,
     animationStart: function() {
       if ($('#gift').hasClass('hidden')) {
-        $('#gift').removeClass('hidden');
-        $('#incentives').addClass('hidden');
+        $('#gift').fadeIn().removeClass('hidden');
+        $('#incentives').fadeOut().addClass('hidden');
       } else if ($('#incentives').hasClass('hidden')) {
-        $('#gift').addClass('hidden');
-        $('#incentives').removeClass('hidden');
+        $('#gift').fadeOut().addClass('hidden');
+        $('#incentives').fadeIn().removeClass('hidden');
       } else {
         console.log("Error, both class dont have hidden class");
       }
