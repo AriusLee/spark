@@ -504,7 +504,7 @@ header .divider {
 
 #marketer .info_row span {
   vertical-align: top;
-  width: 280px;
+  width: 200px;
   text-align: left;
   margin-right: -4px;
 }
@@ -518,21 +518,22 @@ header .divider {
 }
 
 #marketer h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: normal;
   padding-bottom: 5px;
+  line-height: 1.2em;
 }
 
 #marketer p {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.5em;
   color: #666;
   font-weight: 300;
 }
 
 .button_how_this_work {
-  width: 254px;
-  height: 59px;
+  width: 200px;
+  height: 46px;
   background: url(../images/button-how-this-work.png) no-repeat;
   cursor: pointer;
   margin-left: -4px;
