@@ -863,15 +863,17 @@ ul.benefit_list li:last-child {
 
 #marketer .info_row span {
   vertical-align: top;
-  width: 200px;
+  width: 400px;
+  height: 160px;
+  margin-bottom: 25px;
   text-align: left;
   margin-right: -4px;
 }
 
 #marketer .divider {
   width: 2px !important;
-  height: 253px;
-  margin: 0 20px !important;
+  height: 160px;
+  margin: 0 46px 0 50px !important;
   background: url(../images/marketer-divider.png) no-repeat;
   vertical-align: top;
 }
@@ -891,9 +893,9 @@ ul.benefit_list li:last-child {
 }
 
 .button_how_this_work {
-  width: 200px;
-  height: 46px;
-  background: url(../images/button-how-this-work.png) no-repeat;
+  width: 175px;
+  height: 58px;
+  background: url(../images/learn-more.png) no-repeat;
   cursor: pointer;
   margin-left: -4px;
   margin-top: 10px;
