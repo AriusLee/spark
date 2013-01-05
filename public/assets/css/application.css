@@ -283,6 +283,15 @@ header .divider {
   margin-top: 8px;
 }
 
+header.absolute .contact,
+header.absolute .about {
+  display: none;
+}
+
+header.fixed .demo {
+  display: none;
+}
+
 #right_nav {
   position: fixed;
   top: 140px;
