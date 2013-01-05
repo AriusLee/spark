@@ -32,6 +32,21 @@ var app = $.sammy(function(){
 
 $(document).ready(function() {
   
+  $(window).scroll(function(){
+    // Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
+    if($(window).scrollTop() > 0){
+      // If it's more than or equal to 0, show the toTop button.
+      console.log("start scrolling");
+      $('#main_nav').css("padding-top", "0px");
+      $('#main_nav').css("height", "55px");
+    } else {
+      // If it's less than 0 (at the top), hide the toTop button.
+      console.log("reached top");
+      $('#main_nav').css("padding-top", "25px");
+      $('#main_nav').css("height", "70px");
+    }
+ });
+  
   $('#right_nav').scrollspy({
     min: $('#transactional_media').offset().top - 100,
     max: 10000,
