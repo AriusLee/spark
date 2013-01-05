@@ -32,15 +32,30 @@ var app = $.sammy(function(){
 
 $(document).ready(function() {
   
+  $(window).scroll(function(){
+    // Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
+    if($(window).scrollTop() > 0){
+      // If it's more than or equal to 0, show the toTop button.
+      console.log("start scrolling");
+      $('#main_nav').css("padding-top", "0px");
+      $('#main_nav').css("height", "55px");
+    } else {
+      // If it's less than 0 (at the top), hide the toTop button.
+      console.log("reached top");
+      $('#main_nav').css("padding-top", "25px");
+      $('#main_nav').css("height", "70px");
+      $('#right_nav li').removeClass('current');
+      $('#right_nav').removeClass('hidden')
+    }
+ });
+  
   $('#right_nav').scrollspy({
     min: $('#transactional_media').offset().top - 100,
     max: 10000,
     onEnter: function(element, position) {
-      $('#right_nav li').removeClass('current');
-      $('#right_nav li.transactional').addClass('current');
-    },
-    onLeave: function(element, position) {
-      $('#right_nav li').removeClass('current');
+      //$('#right_nav li').removeClass('current');
+      //$('#right_nav li.transactional').addClass('current');
+      $('#right_nav').addClass('hidden')
     }
   });
   
@@ -48,11 +63,9 @@ $(document).ready(function() {
     min: $('#marketer').offset().top - 100,
     max: 10000,
     onEnter: function(element, position) {
-      $('#right_nav li').removeClass('current');
-      $('#right_nav li.marketer').addClass('current');
-    },
-    onLeave: function(element, position) {
-      $('#right_nav li').removeClass('current');
+      //$('#right_nav li').removeClass('current');
+      //$('#right_nav li.marketer').addClass('current');
+      $('#right_nav').addClass('hidden')
     }
   });
   
@@ -60,11 +73,9 @@ $(document).ready(function() {
     min: $('#about_us').offset().top - 100,
     max: 10000,
     onEnter: function(element, position) {
-      $('#right_nav li').removeClass('current');
-      $('#right_nav li.about').addClass('current');
-    },
-    onLeave: function(element, position) {
-      $('#right_nav li').removeClass('current');
+      //$('#right_nav li').removeClass('current');
+      //$('#right_nav li.about').addClass('current');
+      $('#right_nav').addClass('hidden')
     }
   });
   
@@ -72,27 +83,14 @@ $(document).ready(function() {
     min: $('#contact_guide').offset().top - 480,
     max: 10000,
     onEnter: function(element, position) {
-      $('#right_nav li').removeClass('current');
-      $('#right_nav li.contact').addClass('current');
-    },
-    onLeave: function(element, position) {
-      $('#right_nav li').removeClass('current');
+      //$('#right_nav li').removeClass('current');
+      //$('#right_nav li.contact').addClass('current');
+      $('#right_nav').addClass('hidden')
     }
   });
-  
+
   $("#home_slider").slides({
-    play: 5000,
-    animationStart: function() {
-      if ($('#gift').hasClass('hidden')) {
-        $('#gift').fadeIn().removeClass('hidden');
-        $('#incentives').fadeOut().addClass('hidden');
-      } else if ($('#incentives').hasClass('hidden')) {
-        $('#gift').fadeOut().addClass('hidden');
-        $('#incentives').fadeIn().removeClass('hidden');
-      } else {
-        console.log("Error, both class dont have hidden class");
-      }
-    }
+    play: 5000
   });
   app.run("#/");
 });
