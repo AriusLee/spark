@@ -18,24 +18,34 @@
 
 <body>
   <div id="topbar"><div class="container">Received a reward? Access your rewards <a>here</a></div></div><!-- /#topbar -->
-  <header>
+  <header class="absolute">
     <div id="main_nav">
       <div class="container">
         <a href="/" id="logo_link"></a>
         <nav>
-          <span class="divider"></span>
-          <a href="/#/about-us">
-            <img src="assets/images/icon-about.png" alt="" />
+          <span class="divider transactional"></span>
+          <a href="/#/about-us" class="transactional">
+            <span class="icon transactional"></span>
+            Transactional Media
+          </a>
+          <span class="divider marketer"></span>
+          <a href="/#/about-us" class="marketer">
+            <span class="icon marketer"></span>
+            Marketer
+          </a>
+          <span class="divider about"></span>
+          <a href="/#/about-us" class="about">
+            <span class="icon about"></span>
             About Us
           </a>
-          <span class="divider"></span>
-          <a href="/#/contact-us">
-            <img src="assets/images/icon-contact.png" alt="" />
+          <span class="divider contact"></span>
+          <a href="/#/contact-us" class="contact">
+            <span class="icon contact"></span>
             Contact Us
           </a>
-          <span class="divider"></span>
-          <a>
-            <img src="assets/images/icon-demo.png" alt="" />
+          <span class="divider demo"></span>
+          <a href="demo.html" class="demo">
+            <span class="icon demo"></span>
             Demo
           </a>
           <span class="divider"></span>
@@ -43,7 +53,6 @@
         </nav>
       </div>
     </div><!-- /#main_nav -->
-
   </header>
   
   <div id="main">
@@ -66,22 +75,22 @@
             </tr>
             <tr>
               <td class="label_col">Name</td>
-              <td class="field_col">
+              <td class="field_col"><div class="relative_cage">
                 <div class="textbox">
                   <input type="text" placeholder="First" class="first_name" />
                   <input type="text" placeholder="Last" class="last_name" />
                 </div>
                 <img src="assets/images/mark.png" class="mark" />
-              </td>
+              </div></td>
             </tr>
             <tr>
               <td class="label_col">Email</td>
-              <td class="field_col">
+              <td class="field_col"><div class="relative_cage">
                 <div class="textbox">
                   <input type="email" />
                 </div>
                 <img src="assets/images/mark.png" class="mark" />
-              </td>
+              </div></td>
             </tr>
             <tr>
               <td class="label_col">Phone</td>
@@ -109,12 +118,12 @@
             </tr>
             <tr>
               <td class="label_col">Message</td>
-              <td class="field_col">
+              <td class="field_col"><div class="relative_cage">
                 <div class="textbox">
                   <textarea placeholder="Please give us the details, the more we know, the easier to assist!"></textarea>
                 </div>
                 <img src="assets/images/mark.png" class="mark" />
-              </td>
+              </div></td>
             </tr>
             <tr>
               <td class="label_col"></td>
