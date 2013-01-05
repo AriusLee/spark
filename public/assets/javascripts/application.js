@@ -32,6 +32,15 @@ var app = $.sammy(function(){
 
 $(document).ready(function() {
   
+  $('.gift_roundabout_img').roundabout({
+    tilt: 0.5,
+    minScale: 0.1,
+    maxScale: 0.5,
+    autoplay: true,
+    enableDrag: true,
+    autoplayDuration: 5000
+  });
+  
   $(window).scroll(function(){
     // Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
     if($(window).scrollTop() > 0){

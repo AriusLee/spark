@@ -642,15 +642,30 @@ header.fixed nav .demo {
 
 #gift_slider .gift_roundabout_img {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 600px;
-  height: 388px;
+  top: 20px;
+  left: 400px;
+  width: 200px;
 }
 
-#gift_slider .gift_roundabout_img img {
-  position: absolute;
+
+.roundabout-holder {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   height: 5em;
+   width: 5em;
 }
+.roundabout-moveable-item {
+   height: 4em;
+   width: 4em;
+   cursor: pointer;
+   background-color: #ccc;
+   border: 1px solid #999;
+}
+.roundabout-in-focus {
+   cursor: auto;
+}
+
 
 #gift_slider .gift_caption {
   position: absolute;
