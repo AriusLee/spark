@@ -37,13 +37,14 @@ $(document).ready(function() {
     if($(window).scrollTop() > 0){
       // If it's more than or equal to 0, show the toTop button.
       console.log("start scrolling");
-      $('#main_nav').css("padding-top", "0px");
-      $('#main_nav').css("height", "55px");
+      $('header').removeClass('absolute');
+      $('header').addClass('fixed');
+      
     } else {
       // If it's less than 0 (at the top), hide the toTop button.
       console.log("reached top");
-      $('#main_nav').css("padding-top", "25px");
-      $('#main_nav').css("height", "70px");
+      $('header').removeClass('fixed');
+      $('header').addClass('absolute');
       $('#right_nav li').removeClass('current');
       $('#right_nav').removeClass('hidden')
     }

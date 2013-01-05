@@ -175,6 +175,21 @@ h1, h2, h3, h4, h5, p {
 
 /* Header */
 header {
+  -webkit-transition: top 0.2s;
+  -moz-transition: top 0.2s;
+  -o-transition: top 0.2s;
+  transition: top 0.2s;
+}
+
+header.absolute {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  z-index: 98;
+}
+
+header.fixed {
   position: fixed;
   top: 0;
   left: 0;
@@ -186,7 +201,7 @@ header {
   height: 25px;
   line-height: 25px;
   font-size: 11px;
-  background: url(../images/topbar.png) no-repeat center top transparent;
+  background: url(../images/topbar.png) no-repeat center top rgba(255,255,255,0.95);
   text-align: center;
   color: #ccc;
   position: absolute;
@@ -208,9 +223,9 @@ header {
 #main_nav {
   position: relative;
   z-index: 1;
-  padding-top: 25px;
-  height: 70px;
+  height: 60px;
   background: url(../images/header.png) repeat-x;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.3);
 }
 
 #logo_link {
