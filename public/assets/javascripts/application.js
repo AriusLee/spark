@@ -40,7 +40,12 @@ $(document).ready(function() {
     enableDrag: true,
     autoplayDuration: 5000
   });
-  
+
+  $('.gift_roundabout_img')
+    .bind('animationStart', function() {
+      console.log("yo");
+    });
+
   $(window).scroll(function(){
     // Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
     if($(window).scrollTop() > 0){
@@ -57,7 +62,7 @@ $(document).ready(function() {
       $('#right_nav li').removeClass('current');
       $('#right_nav').removeClass('hidden')
     }
- });
+  });
   
   $('#right_nav').scrollspy({
     min: $('#transactional_media').offset().top - 100,
