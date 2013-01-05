@@ -642,7 +642,7 @@ header.fixed nav .demo {
 
 #gift_slider .gift_roundabout_img {
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 400px;
   width: 200px;
 }
@@ -652,15 +652,9 @@ header.fixed nav .demo {
    list-style: none;
    padding: 0;
    margin: 0;
-   height: 5em;
-   width: 5em;
 }
 .roundabout-moveable-item {
-   height: 4em;
-   width: 4em;
    cursor: pointer;
-   background-color: #ccc;
-   border: 1px solid #999;
 }
 .roundabout-in-focus {
    cursor: auto;
@@ -863,15 +857,17 @@ ul.benefit_list li:last-child {
 
 #marketer .info_row span {
   vertical-align: top;
-  width: 200px;
+  width: 400px;
+  height: 160px;
+  margin-bottom: 25px;
   text-align: left;
   margin-right: -4px;
 }
 
 #marketer .divider {
   width: 2px !important;
-  height: 253px;
-  margin: 0 20px !important;
+  height: 160px;
+  margin: 0 46px 0 50px !important;
   background: url(../images/marketer-divider.png) no-repeat;
   vertical-align: top;
 }
@@ -891,9 +887,9 @@ ul.benefit_list li:last-child {
 }
 
 .button_how_this_work {
-  width: 200px;
-  height: 46px;
-  background: url(../images/button-how-this-work.png) no-repeat;
+  width: 175px;
+  height: 58px;
+  background: url(../images/learn-more.png) no-repeat;
   cursor: pointer;
   margin-left: -4px;
   margin-top: 10px;
@@ -959,6 +955,16 @@ ul.benefit_list li:last-child {
 
 #about_us p a:hover {
   text-decoration: underline;
+}
+
+#about_us #overview p {
+  font-size: 36px;
+  padding-top: 15px;
+}
+
+#about_us #overview b {
+  font-weight: normal;
+  color: #333;
 }
 
 #about_us #team_wrapper {

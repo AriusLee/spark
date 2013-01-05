@@ -33,9 +33,9 @@ var app = $.sammy(function(){
 $(document).ready(function() {
   
   $('.gift_roundabout_img').roundabout({
-    tilt: 0.5,
+    tilt: 2,
     minScale: 0.1,
-    maxScale: 0.5,
+    maxScale: 2,
     autoplay: true,
     enableDrag: true,
     autoplayDuration: 5000
