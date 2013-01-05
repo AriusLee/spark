@@ -225,6 +225,8 @@ header.fixed {
   z-index: 1;
   height: 60px;
   background: url(../images/header.png) repeat-x;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.3);
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.3);
 }
 
@@ -948,9 +950,18 @@ p a:hover {
   box-shadow: inset 0 0 8px 0 rgba(0,0,0,0.15);
 }
 
+#marquee_pane marquee > div {
+  text-align: center;
+}
+
 #marquee_pane marquee img {
   height: 38px;
   margin-right: 65px;
+  margin-bottom: 45px;
+}
+
+#marquee_pane marquee > div img:last-child {
+  margin-right: 0;
 }
 
 /* Contact */
