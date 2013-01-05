@@ -44,6 +44,8 @@ $(document).ready(function() {
       console.log("reached top");
       $('#main_nav').css("padding-top", "25px");
       $('#main_nav').css("height", "70px");
+      $('#right_nav li').removeClass('current');
+      $('#right_nav').removeClass('hidden')
     }
  });
   
@@ -51,11 +53,9 @@ $(document).ready(function() {
     min: $('#transactional_media').offset().top - 100,
     max: 10000,
     onEnter: function(element, position) {
-      $('#right_nav li').removeClass('current');
-      $('#right_nav li.transactional').addClass('current');
-    },
-    onLeave: function(element, position) {
-      $('#right_nav li').removeClass('current');
+      //$('#right_nav li').removeClass('current');
+      //$('#right_nav li.transactional').addClass('current');
+      $('#right_nav').addClass('hidden')
     }
   });
   
@@ -63,11 +63,9 @@ $(document).ready(function() {
     min: $('#marketer').offset().top - 100,
     max: 10000,
     onEnter: function(element, position) {
-      $('#right_nav li').removeClass('current');
-      $('#right_nav li.marketer').addClass('current');
-    },
-    onLeave: function(element, position) {
-      $('#right_nav li').removeClass('current');
+      //$('#right_nav li').removeClass('current');
+      //$('#right_nav li.marketer').addClass('current');
+      $('#right_nav').addClass('hidden')
     }
   });
   
@@ -75,11 +73,9 @@ $(document).ready(function() {
     min: $('#about_us').offset().top - 100,
     max: 10000,
     onEnter: function(element, position) {
-      $('#right_nav li').removeClass('current');
-      $('#right_nav li.about').addClass('current');
-    },
-    onLeave: function(element, position) {
-      $('#right_nav li').removeClass('current');
+      //$('#right_nav li').removeClass('current');
+      //$('#right_nav li.about').addClass('current');
+      $('#right_nav').addClass('hidden')
     }
   });
   
@@ -87,14 +83,12 @@ $(document).ready(function() {
     min: $('#contact_guide').offset().top - 480,
     max: 10000,
     onEnter: function(element, position) {
-      $('#right_nav li').removeClass('current');
-      $('#right_nav li.contact').addClass('current');
-    },
-    onLeave: function(element, position) {
-      $('#right_nav li').removeClass('current');
+      //$('#right_nav li').removeClass('current');
+      //$('#right_nav li.contact').addClass('current');
+      $('#right_nav').addClass('hidden')
     }
   });
-  
+
   $("#home_slider").slides({
     play: 5000
   });
