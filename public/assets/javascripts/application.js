@@ -43,7 +43,7 @@ $(document).ready(function() {
 
   $('.gift_roundabout_img')
     .bind('animationStart', function() {
-      console.log("yo");
+      $('.gift_caption > ul').toggleClass('hidden');
     });
 
   $(window).scroll(function(){
