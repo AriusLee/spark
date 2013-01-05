@@ -119,6 +119,52 @@ h1, h2, h3, h4, h5, p {
   position: relative;
 }
 
+.button_green, .button_green:visited {
+  padding: 4px 20px;
+  border: 1px solid #0F301F;
+  border-radius: 4px;
+  font-weight: 300;
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.4);
+  text-align: center;
+  font-size: 21px;
+  color: rgba(255,255,255,0.85);
+  text-shadow: 0 -1px rgba(0,0,0,0.4);
+  text-decoration: none;
+  cursor: pointer;
+  background: #89b03b; /* Old browsers */
+  background: -moz-linear-gradient(top,  #89b03b 0%, #277828 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#89b03b), color-stop(100%,#277828)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #89b03b 0%,#277828 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #89b03b 0%,#277828 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #89b03b 0%,#277828 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #89b03b 0%,#277828 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#89b03b', endColorstr='#277828',GradientType=0 ); /* IE6-9 */
+  
+}
+
+.button_blue_2, .button_blue_2:visited {
+  padding: 4px 20px;
+  border: 1px solid #002350;
+  border-radius: 4px;
+  font-weight: 300;
+  box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.4);
+  text-align: center;
+  font-size: 21px;
+  color: rgba(255,255,255,0.85);
+  text-shadow: 0 -1px rgba(0,0,0,0.4);
+  text-decoration: none;
+  cursor: pointer;
+  background: #0093ff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #0093ff 0%, #2b4dff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0093ff), color-stop(100%,#2b4dff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #0093ff 0%,#2b4dff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #0093ff 0%,#2b4dff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #0093ff 0%,#2b4dff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #0093ff 0%,#2b4dff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0093ff', endColorstr='#2b4dff',GradientType=0 ); /* IE6-9 */
+  
+}
+
 .button_blue {
   width: 301px;
   height: 53px;
@@ -542,6 +588,82 @@ header.fixed nav .demo {
   padding-bottom: 35px;
   margin-bottom: 0;
   background: none !important;
+}
+
+#gift {
+  height: 450px;
+}
+
+#gift > .container {
+  position: relative;
+  height: 450px;
+}
+
+#gift .headings {
+  width: 450px;
+  top: 10px;
+  left: 0;
+  text-align: left;
+  position: absolute;
+  z-index: 2;
+}
+
+#gift .headings h2 {
+  color: #fff;
+  text-align: left;
+  line-height: 1.1em;
+  font-size: 38px;
+}
+
+#gift .headings p {
+  color: yellow;
+  font-size: 28px;
+  font-weight: 300;
+  padding-top: 10px;
+  text-shadow: rgba(0,0,0,0.6) 0 1px 5px;
+}
+
+#gift .headings .action_row {
+  text-align: left;
+  padding: 20px 0;
+}
+
+#gift .headings .action_row a {
+  width: 200px;
+  padding: 10px 0;
+}
+
+#gift_slider {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+#gift_slider .gift_roundabout_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 600px;
+  height: 388px;
+}
+
+#gift_slider .gift_roundabout_img img {
+  position: absolute;
+}
+
+#gift_slider .gift_caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+  height: 150px;
+}
+
+#gift_slider .gift_caption > div {
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.85);
 }
 
 #transactional_media .text_col {
