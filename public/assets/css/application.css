@@ -245,7 +245,7 @@ nav {
 nav a {
   color: #4D4D4D !important;
   font-size: 14px;
-  padding: 10px 20px;
+  padding: 20px 5px 20px;
   text-shadow: 0 1px #fff;
   cursor: pointer;
   text-decoration: none;
@@ -256,8 +256,30 @@ nav a:hover {
   text-decoration: none;
 }
 
-nav a img {
+nav a .icon {
+  width: 21px;
+  height: 21px;
+  background: url(../images/icon-sprite.png) no-repeat;
+  background-position: 0 0;
   margin-right: 5px;
+  vertical-align: middle;
+}
+
+nav a .icon.contact {
+  background-position: -35px 0;
+}
+
+nav a .icon.about {
+  background-position: -70px 0;
+}
+
+nav a .icon.marketer {
+  width: 28px;
+  background-position: -105px 0;
+}
+
+nav a .icon.transactional {
+  background-position: -140px 0;
 }
 
 #partner_session {
@@ -283,12 +305,14 @@ header .divider {
   margin-top: 8px;
 }
 
-header.absolute .contact,
-header.absolute .about {
+header.absolute nav .contact,
+header.absolute nav .about,
+header.absolute nav .transactional,
+header.absolute nav .marketer {
   display: none;
 }
 
-header.fixed .demo {
+header.fixed nav .demo {
   display: none;
 }
 
@@ -383,7 +407,7 @@ header.fixed .demo {
 
 /* Hero */
 #hero {
-  height: 520px;
+  height: 650px;
   width: 100%;
   background: #0F0A0A;
   color: #fff;
