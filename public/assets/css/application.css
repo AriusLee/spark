@@ -961,6 +961,16 @@ ul.benefit_list li:last-child {
   text-decoration: underline;
 }
 
+#about_us #overview p {
+  font-size: 36px;
+  padding-top: 15px;
+}
+
+#about_us #overview b {
+  font-weight: normal;
+  color: #333;
+}
+
 #about_us #team_wrapper {
   padding-top: 25px;
   padding-bottom: 35px;
