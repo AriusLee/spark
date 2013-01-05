@@ -154,11 +154,11 @@ h1, h2, h3, h4, h5, p {
 
 /* Header */
 header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 98;
 }
 
 #topbar {
@@ -168,11 +168,11 @@ header {
   background: url(../images/topbar.png) no-repeat center top transparent;
   text-align: center;
   color: #ccc;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 99;
 }
 
 #topbar a {
