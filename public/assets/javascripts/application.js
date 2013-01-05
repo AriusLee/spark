@@ -91,7 +91,18 @@ $(document).ready(function() {
   });
 
   $("#home_slider").slides({
-    play: 5000
+    play: 5000,
+    animationStart: function() {
+      if ($('#logo_marquee').hasClass('hidden')) {
+        $('#logo_marquee').removeClass('hidden');
+        $('#quote_marquee').addClass('hidden');
+      } else if ($('#quote_marquee').hasClass('hidden')) {
+        $('#quote_marquee').removeClass('hidden');
+        $('#logo_marquee').addClass('hidden');
+      } else {
+        console.log('Marquee slides error.')
+      }
+    }
   });
   app.run("#/");
 });
