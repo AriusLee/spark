@@ -1037,13 +1037,17 @@ marquee p {
 }
 
 /* Contact Us */
-#contact_wrapper {
+#contact_wrapper,
+#demo_wrapper {
   padding-top: 100px;
-  background: url(../images/bg-contact.png);
   color: #ccc;
   font-weight: 300;
   padding-bottom: 180px;
   position: relative;
+}
+
+#contact_wrapper {
+  background: url(../images/bg-contact.png);
 }
 
 img.ear_phone {
@@ -1058,18 +1062,21 @@ img.ear_phone {
   z-index: 2;
 }
 
-#contact_wrapper h1 {
+#contact_wrapper h1,
+#demo_wrapper h1 {
   font-weight: 300;
   color: #fff;
 }
 
-#contact_wrapper p strong {
+#contact_wrapper p strong,
+#demo_wrapper p strong {
   font-weight: 300;
   font-size: 15px;
   padding-right: 5px;
 }
 
-#contact_wrapper p {
+#contact_wrapper p,
+#demo_wrapper p {
   font-size: 11px;
   padding: 5px 0 10px;
 }
@@ -1118,11 +1125,14 @@ img.ear_phone {
 }
 
 .textbox .first_name,
-.textbox .last_name {
+.textbox .last_name,
+.textbox .company_name,
+.textbox .company_url {
   width: 180px;
 }
 
-.textbox .last_name {
+.textbox .last_name,
+.textbox .company_url {
   border-left: 1px solid #ddd;
   padding-left: 10px;
   margin-left: 10px;
@@ -1181,6 +1191,77 @@ img.mark {
 }
 
 .contact_info_list a:hover {
+  text-decoration: underline;
+}
+
+/* Demo */
+.align_center {
+  text-align: center !important;
+}
+
+#demo_wrapper h1 {
+  color: #333;
+}
+
+#demo_wrapper p.align_center {
+  color: #666;
+  font-size: 18px;
+}
+
+.demo_divider {
+  height: 8px;
+  background: url(../images/divider-demo.png) no-repeat center center;
+  margin: 15px 0 30px;
+}
+
+#demo_wrapper table.contact_table {
+  margin: 0 auto;
+}
+
+#demo_wrapper .contact_table .label_col {
+  color: #666;
+  width: 110px;
+}
+
+#demo_wrapper .contact_table td {
+  padding-bottom: 10px;
+  vertical-align: middle;
+}
+
+#demo_wrapper .submit_button {
+  border: none;
+  outline: none;
+  width: 405px;
+  height: 40px;
+  background: url(../images/submit-button.png) no-repeat;
+  margin-bottom: 25px;
+}
+
+#demo_wrapper table.contact_info_table {
+  width: 100%;
+}
+
+.contact_info_table td {
+  width: 33%;
+}
+
+.contact_info_table h3 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #4d4d4d;
+}
+
+#demo_wrapper .contact_info_table p {
+  font-size: 16px;
+  color: #666;
+}
+
+#demo_wrapper .contact_info_table p a {
+  color: #c00;
+  text-decoration: none;
+}
+
+#demo_wrapper .contact_info_table p a:hover {
   text-decoration: underline;
 }
 
