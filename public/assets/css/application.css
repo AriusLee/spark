@@ -132,6 +132,27 @@ h1, h2, h3, h4, h5, p {
   color: #fff;
 }
 
+.button_blue:visited, .button_orange:visited {
+  color: rgba(255,255,255,0.85);
+}
+
+.button_orange {
+  width: 338px;
+  height: 63px;
+  background: url(../images/button-orange.png) no-repeat;
+  text-align: center;
+  line-height: 63px;
+  font-size: 21px;
+  color: rgba(255,255,255,0.85);
+  text-shadow: 0 -1px rgba(0,0,0,0.4);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button_orange:hover {
+  color: #fff;
+}
+
 .button_gray {
   text-align: center;
   padding: 4px 20px;
@@ -919,7 +940,7 @@ p a:hover {
 
 /* Contact */
 #contact_guide {
-  background: #39B54A;
+  background: #365870;
   border-top: 1px solid #072742;
   padding: 15px 0 35px;
   text-align: center;
@@ -935,7 +956,7 @@ p a:hover {
   text-transform: capitalize;
 }
 
-#contact_guide .button_blue {
+#contact_guide .button_orange {
   margin-top: 15px;
 }
 
