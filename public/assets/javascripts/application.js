@@ -81,18 +81,7 @@ $(document).ready(function() {
   });
   
   $("#home_slider").slides({
-    play: 5000,
-    animationStart: function() {
-      if ($('#gift').hasClass('hidden')) {
-        $('#gift').fadeIn().removeClass('hidden');
-        $('#incentives').fadeOut().addClass('hidden');
-      } else if ($('#incentives').hasClass('hidden')) {
-        $('#gift').fadeOut().addClass('hidden');
-        $('#incentives').fadeIn().removeClass('hidden');
-      } else {
-        console.log("Error, both class dont have hidden class");
-      }
-    }
+    play: 5000
   });
   app.run("#/");
 });
