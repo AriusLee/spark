@@ -362,7 +362,8 @@ header.absolute nav .marketer {
   display: none;
 }
 
-header.fixed nav .demo {
+header.fixed nav .demo,
+header.fixed nav .signin {
   display: none;
 }
 
