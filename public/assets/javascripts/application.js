@@ -113,7 +113,7 @@ $(document).ready(function() {
   });
 
   $("#home_slider").slides({
-    play: 5000,
+    play: 8000,
     animationStart: function() {
       if ($('#logo_marquee').hasClass('hidden')) {
         $('#logo_marquee').removeClass('hidden');
