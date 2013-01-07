@@ -904,15 +904,20 @@ ul.benefit_list li:last-child {
   background: #f9f9f9;
 }
 
+#marketer h2 {
+  text-align: center;
+}
+
 #marketer .info_row {
   padding: 25px 0 35px;
+  text-align: center;
 }
 
 #marketer .info_row span {
   vertical-align: top;
   width: 400px;
-  height: 180px;
-  margin-bottom: 35px;
+  height: 170px;
+  margin-bottom: 25px;
   text-align: left;
   margin-right: -4px;
 }
