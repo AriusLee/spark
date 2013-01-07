@@ -1270,7 +1270,7 @@ marquee p {
 
 img.ear_phone {
   position: absolute;
-  bottom: 0;
+  bottom: -40px;
   right: 100px;
   z-index: 1;
 }
@@ -1384,21 +1384,30 @@ img.mark {
 }
 
 #contact_wrapper .right_col {
-  width: 250px;
+  width: 300px;
   margin-top: 74px;
-  padding: 10px;
+  padding: 15px;
   background: rgba(255,255,255,0.15);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
   border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 6px 0 rgba(0,0,0,0.6);
+  -moz-box-shadow: inset 0 0 6px 0 rgba(0,0,0,0.6);
   box-shadow: inset 0 0 6px 0 rgba(0,0,0,0.6);
+}
+
+.contact_info_list p {
+  font-size: 14px !important;
 }
 
 .contact_info_list h5 {
   font-weight: normal;
   color: #001A2B;
+  font-size: 14px;
 }
 
 .contact_info_list span.pull_right {
-  font-size: 11px;
+  font-size: 12px;
   font-style: italic;
   color: #06263C;
 }
@@ -1485,6 +1494,8 @@ img.mark {
 
 /* Footer */
 footer {
+  position: relative;
+  z-index: 3;
   color: #999;
   font-size: 11px;
   padding-top: 10px;
