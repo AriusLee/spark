@@ -229,8 +229,9 @@ h1, h2, h3, h4, h5, p {
 #top_button {
   position: fixed;
   bottom: 30px;
-  right: 15px;
+  right: 25px;
   z-index: 99;
+  display: none;
 }
 
 #top_button:hover {
