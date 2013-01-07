@@ -494,7 +494,7 @@ header.fixed nav .signin {
 
 /* Hero */
 #hero {
-  height: 700px;
+  height: 590px;
   width: 100%;
   background: #0F0A0A;
   color: #fff;
@@ -502,26 +502,26 @@ header.fixed nav .signin {
 
 #home_slider .slide_1 {
   width: 100%;
-  height: 700px;
+  height: 590px;
   background: url(../images/slide-1.png) no-repeat center center;
 }
 
 #home_slider .slides_container {
   width: 960px;
-  height: 700px;
+  height: 590px;
 }
 
 .slides_container .slide {
   width: 960px;
-  height: 700px;
+  height: 590px;
   display: block;
 }
 
 #home_slider .slide_2 img {
   position: absolute;
   z-index: 0;
-  height: 700px;
-  margin-left: -600px;
+  height: 590px;
+  margin-left: -500px;
   left: 50%;
 }
 
@@ -529,7 +529,7 @@ header.fixed nav .signin {
   text-align: center;
   position: relative;
   z-index: 1;
-  padding-top: 157px;
+  padding-top: 120px;
 }
 
 .slide_caption h1 {
@@ -554,7 +554,7 @@ header.fixed nav .signin {
   z-index: 97;
   margin-left: -50px;
   left: 50%;
-  top: 625px;
+  top: 525px;
 }
 
 #home_slider ul.pagination li {
@@ -584,7 +584,7 @@ header.fixed nav .signin {
 
 /* Transactional Media */
 #transactional_media #gift {
-  height: 800px;
+  height: 690px;
   overflow-x: hidden;
   width: 100%;
   background: url(../images/bg-transactional.png) repeat-y center #121a1c;
@@ -632,17 +632,17 @@ header.fixed nav .signin {
 }
 
 #gift {
-  height: 800px;
+  height: 690px;
 }
 
 #gift > .container {
   position: relative;
-  height: 800px;
+  height: 690px;
 }
 
 #gift .headings {
   width: 450px;
-  top: 140px;
+  top: 80px;
   left: 0;
   text-align: left;
   position: absolute;
@@ -683,7 +683,7 @@ header.fixed nav .signin {
 
 #gift_slider .gift_roundabout_img {
   position: absolute;
-  top: 240px;
+  top: 180px;
   left: 440px;
   width: 200px;
 }
@@ -704,7 +704,7 @@ header.fixed nav .signin {
 
 #gift_slider .gift_caption {
   position: absolute;
-  bottom: 140px;
+  bottom: 120px;
   left: 0;
   width: 350px;
   height: 150px;
@@ -894,19 +894,19 @@ ul.benefit_list li:last-child {
 /* Marketer */
 #marketer {
   padding-top: 100px;
-  height: 700px;
+  height: 590px;
   background: #f9f9f9;
 }
 
 #marketer .info_row {
-  padding: 35px 0 35px;
+  padding: 25px 0 35px;
 }
 
 #marketer .info_row span {
   vertical-align: top;
   width: 400px;
-  height: 210px;
-  margin-bottom: 45px;
+  height: 180px;
+  margin-bottom: 35px;
   text-align: left;
   margin-right: -4px;
 }
@@ -944,7 +944,7 @@ ul.benefit_list li:last-child {
 
 /* About Us */
 #about_us {
-  height: 800px;
+  height: 690px;
 }
 
 #about_nav {
@@ -1502,10 +1502,10 @@ footer .divider {
 
 #fold_ruler {
   width: 1280px;
-  height: 800px;
+  height: 690px;
   border: 1px solid skyblue;
   position: absolute;
-  top: 2400px;
+  top: 2070px;
   left: 50%;
   margin-left: -641px;
   z-index: 999;
