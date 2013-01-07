@@ -51,17 +51,25 @@ $(document).ready(function() {
     if($(window).scrollTop() > 0){
       // If it's more than or equal to 0, show the toTop button.
       console.log("start scrolling");
+      $('#top_button').show();
       $('header').removeClass('absolute');
       $('header').addClass('fixed');
+      
       
     } else {
       // If it's less than 0 (at the top), hide the toTop button.
       console.log("reached top");
+      $('#top_button').hide();
       $('header').removeClass('fixed');
       $('header').addClass('absolute');
       $('#right_nav li').removeClass('current');
       $('#right_nav').removeClass('hidden')
+      
     }
+  });
+  
+  $('#top_button').click(function() {
+    $(window).scrollTo( $('#main'), 400, {axis:'y',offset:{left: 0, top:0 } } );
   });
   
   $('#right_nav').scrollspy({
