@@ -439,6 +439,12 @@ header.fixed nav .signin {
   display: none;
 }
 
+#right_nav li a.home .icon,
+#right_nav li a.home:hover .icon,
+#right_nav li.current a.home .icon {
+  background-position: -20px 0;
+}
+
 #right_nav li:hover a .inner_text,
 #right_nav li.current a .inner_text {
   display: inline-block;
