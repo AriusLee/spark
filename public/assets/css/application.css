@@ -658,13 +658,15 @@ header.fixed nav .signin {
   text-align: left;
   line-height: 1.1em;
   font-size: 38px;
+  width: 960px;
+  text-align: center;
 }
 
 #gift .headings p {
   color: yellow;
   font-size: 28px;
   font-weight: 300;
-  padding-top: 10px;
+  padding-top: 60px;
   text-shadow: rgba(0,0,0,0.6) 0 1px 5px;
 }
 
@@ -687,7 +689,7 @@ header.fixed nav .signin {
 
 #gift_slider .gift_roundabout_img {
   position: absolute;
-  top: 180px;
+  top: 210px;
   left: 440px;
   width: 200px;
 }
