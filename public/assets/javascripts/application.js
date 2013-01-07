@@ -54,7 +54,7 @@ $(document).ready(function() {
       $('#top_button').show();
       $('header').removeClass('absolute');
       $('header').addClass('fixed');
-      
+      $('#right_nav').addClass('hidden');
       
     } else {
       // If it's less than 0 (at the top), hide the toTop button.
@@ -63,7 +63,7 @@ $(document).ready(function() {
       $('header').removeClass('fixed');
       $('header').addClass('absolute');
       $('#right_nav li').removeClass('current');
-      $('#right_nav').removeClass('hidden')
+      $('#right_nav').removeClass('hidden');
       
     }
   });
