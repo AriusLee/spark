@@ -1207,7 +1207,7 @@ marquee p {
 
 /* Contact */
 #contact_guide {
-  background: url(../images/bg-contact.png);
+  background: url(../images/bg-contact.png) #365870;
   border-top: 1px solid #072742;
   padding: 85px 0 100px;
   text-align: center;
