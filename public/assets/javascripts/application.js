@@ -118,9 +118,11 @@ $(document).ready(function() {
       if ($('#logo_marquee').hasClass('hidden')) {
         $('#logo_marquee').removeClass('hidden');
         $('#quote_marquee').addClass('hidden');
+        $('#marquee_pane h3').html('Our solutions work online, offline & mobile');
       } else if ($('#quote_marquee').hasClass('hidden')) {
         $('#quote_marquee').removeClass('hidden');
         $('#logo_marquee').addClass('hidden');
+        $('#marquee_pane h3').html('Giving Incentives For Transacting is Now Sparking');
       } else {
         console.log('Marquee slides error.')
       }
