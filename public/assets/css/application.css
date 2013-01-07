@@ -188,6 +188,8 @@ h1, h2, h3, h4, h5, p {
 }
 
 .button_orange {
+  border: none;
+  outline: none;
   width: 338px;
   height: 63px;
   background: url(../images/button-orange.png) no-repeat;
@@ -1207,7 +1209,7 @@ marquee p {
 
 /* Contact */
 #contact_guide {
-  background: url(../images/bg-contact.png) #365870;
+  background: #365870;
   border-top: 1px solid #072742;
   padding: 85px 0 100px;
   text-align: center;
@@ -1240,7 +1242,7 @@ marquee p {
 }
 
 #contact_wrapper {
-  background: url(../images/bg-contact.png);
+  background: #365870;
 }
 
 img.ear_phone {
@@ -1338,7 +1340,7 @@ img.ear_phone {
 }
 
 #send_message {
-  width: 206px;
+  width: 185px;
   height: 40px;
   margin-right: 10px;
   background: url(../images/button-send.png) no-repeat;
