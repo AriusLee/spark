@@ -77,10 +77,11 @@ body, #wrapper {
   padding: 0;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -479,7 +480,7 @@ header.fixed nav .signin {
 
 /* Hero */
 #hero {
-  height: 650px;
+  height: 700px;
   width: 100%;
   background: #0F0A0A;
   color: #fff;
@@ -487,26 +488,26 @@ header.fixed nav .signin {
 
 #home_slider .slide_1 {
   width: 100%;
-  height: 650px;
+  height: 700px;
   background: url(../images/slide-1.png) no-repeat center center;
 }
 
 #home_slider .slides_container {
-  width: 940px;
-  height: 650px;
+  width: 960px;
+  height: 700px;
 }
 
 .slides_container .slide {
-  width: 940px;
-  height: 650px;
+  width: 960px;
+  height: 700px;
   display: block;
 }
 
 #home_slider .slide_2 img {
   position: absolute;
   z-index: 0;
-  height: 650px;
-  margin-left: -588px;
+  height: 700px;
+  margin-left: -600px;
   left: 50%;
 }
 
@@ -539,7 +540,7 @@ header.fixed nav .signin {
   z-index: 97;
   margin-left: -50px;
   left: 50%;
-  top: 600px;
+  top: 625px;
 }
 
 #home_slider ul.pagination li {
@@ -569,7 +570,8 @@ header.fixed nav .signin {
 
 /* Transactional Media */
 #transactional_media #gift {
-  min-height: 200px;
+  height: 800px;
+  overflow-x: hidden;
   width: 100%;
   background: url(../images/bg-transactional.png) repeat-y center #121a1c;
   color: #e6e6e6;
@@ -616,17 +618,17 @@ header.fixed nav .signin {
 }
 
 #gift {
-  height: 450px;
+  height: 800px;
 }
 
 #gift > .container {
   position: relative;
-  height: 450px;
+  height: 800px;
 }
 
 #gift .headings {
   width: 450px;
-  top: 10px;
+  top: 140px;
   left: 0;
   text-align: left;
   position: absolute;
@@ -667,7 +669,7 @@ header.fixed nav .signin {
 
 #gift_slider .gift_roundabout_img {
   position: absolute;
-  top: 80px;
+  top: 240px;
   left: 440px;
   width: 200px;
 }
@@ -688,7 +690,7 @@ header.fixed nav .signin {
 
 #gift_slider .gift_caption {
   position: absolute;
-  bottom: 0;
+  bottom: 140px;
   left: 0;
   width: 350px;
   height: 150px;
@@ -877,41 +879,42 @@ ul.benefit_list li:last-child {
 
 /* Marketer */
 #marketer {
-  padding-top: 20px;
+  padding-top: 100px;
+  height: 700px;
   background: #f9f9f9;
 }
 
 #marketer .info_row {
-  padding: 25px 0 35px;
+  padding: 35px 0 35px;
 }
 
 #marketer .info_row span {
   vertical-align: top;
   width: 400px;
-  height: 160px;
-  margin-bottom: 25px;
+  height: 210px;
+  margin-bottom: 45px;
   text-align: left;
   margin-right: -4px;
 }
 
 #marketer .divider {
   width: 2px !important;
-  height: 160px;
+  height: 210px;
   margin: 0 46px 0 50px !important;
   background: url(../images/marketer-divider.png) no-repeat;
   vertical-align: top;
 }
 
 #marketer h4 {
-  font-size: 16px;
+  font-size: 21px;
   font-weight: normal;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   line-height: 1.2em;
 }
 
 #marketer p {
-  font-size: 14px;
-  line-height: 1.5em;
+  font-size: 18px;
+  line-height: 1.4em;
   color: #666;
   font-weight: 300;
 }
@@ -926,6 +929,10 @@ ul.benefit_list li:last-child {
 }
 
 /* About Us */
+#about_us {
+  height: 800px;
+}
+
 #about_nav {
   height: 44px;
   width: 100%;
@@ -1003,26 +1010,36 @@ ul.benefit_list li:last-child {
 }
 
 #about_us #team_wrapper .team_member {
-  width: 420px;
   float: left;
   margin-right: 30px;
   margin-bottom: 25px;
 }
 
+#about_us #team_wrapper .team_member.primary {
+  width: 500px;
+  margin-right: 50px;
+}
+
+#about_us #team_wrapper .team_member.secondary {
+  width: 320px;
+}
+
 #about_us #team_wrapper .team_member h3 {
   color: #0071BC;
+  font-size: 16px;
 }
 
 #about_us #team_wrapper .team_member h6 {
   margin: 0;
-  font-size: 13px;
+  font-size: 15px;
   font-style: italic;
   padding: 4px 0 8px;
   color: #666;
 }
 
 #about_us #team_wrapper .team_member p {
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 1.6em;
 }
 
 
@@ -1031,7 +1048,7 @@ ul.benefit_list li:last-child {
 }
 
 .scroll {
-	width: 940px;
+	width: 960px;
 	overflow: auto;
 	overflow-x: hidden;
 	position: relative;
@@ -1041,7 +1058,7 @@ ul.benefit_list li:last-child {
 }
 
 .scrollContainer div.panel {
-  width: 940px;
+  width: 960px;
 }
 
 /* Press */
@@ -1111,13 +1128,14 @@ p a:hover {
 
 #careers h3 {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 21px;
   margin: 20px 0 10px;
 }
 
 #careers p {
   color: #666;
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 1.5em;
   margin-bottom: 10px;
 }
 
@@ -1132,9 +1150,9 @@ p a:hover {
   background: url(../images/button-job.png) no-repeat;
   text-decoration: none;
   color: #4D4D4D;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 300;
-  padding-top: 18px;
+  padding-top: 20px;
   padding-left: 19px;
   padding-right: 41px;
   text-shadow: 0 1px #fff;
@@ -1189,9 +1207,9 @@ marquee p {
 
 /* Contact */
 #contact_guide {
-  background: #365870;
+  background: url(../images/bg-contact.png);
   border-top: 1px solid #072742;
-  padding: 15px 0 35px;
+  padding: 85px 0 100px;
   text-align: center;
   color: #fff;
 }
@@ -1201,8 +1219,10 @@ marquee p {
   letter-spacing: 1px;
   font-weight: 300;
   text-align: center;
-  font-size: 28px;
+  font-size: 31px;
   text-transform: capitalize;
+  margin-bottom: 10px;
+  text-shadow: rgba(0,0,0,0.65) 0 -1px 2px;
 }
 
 #contact_guide .button_orange {
@@ -1464,6 +1484,19 @@ footer .divider {
   background: url(../images/footer-divider.png) no-repeat;
   margin: -3px 12px 0 14px;
 }
+
+
+#fold_ruler {
+  width: 1280px;
+  height: 800px;
+  border: 1px solid skyblue;
+  position: absolute;
+  top: 2400px;
+  left: 50%;
+  margin-left: -641px;
+  z-index: 999;
+}
+
 /*
 ========================== code ends =============================
 */

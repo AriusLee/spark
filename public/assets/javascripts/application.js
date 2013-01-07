@@ -1,28 +1,28 @@
 var app = $.sammy(function(){
   this.get('#/', function(context) {
-    $('body').stop().scrollTo( $('#main'), 1500, {axis:'y',offset:{left: 0, top:0 } } );
+    $('body').stop().scrollTo( $('#main'), 800, {axis:'y',offset:{left: 0, top:0 } } );
   });
 
   this.get('#/transactional-media', function(context) {
-    $('body').stop().scrollTo( $('#transactional_media'), 1500, {axis:'y',offset:{left: 0, top:-30 } } );
+    $('body').stop().scrollTo( $('#transactional_media'), 800, {axis:'y',offset:{left: 0, top:0 } } );
     $('#right_nav li').removeClass('current');
     $('#right_nav li.transactional').addClass('current');
   });
   
   this.get('#/marketer', function(context) {
-    $('body').stop().scrollTo( $('#marketer'), 1500, {axis:'y',offset:{left: 0, top:-80 } } );
+    $('body').stop().scrollTo( $('#marketer'), 800, {axis:'y',offset:{left: 0, top:0 } } );
     $('#right_nav li').removeClass('current');
     $('#right_nav li.marketer').addClass('current');
   });
   
   this.get('#/about-us', function(context) {
-    $('body').stop().scrollTo( $('#about_us'), 1500, {axis:'y',offset:{left: 0, top:-90 } } );
+    $('body').stop().scrollTo( $('#about_us'), 800, {axis:'y',offset:{left: 0, top:-60 } } );
     $('#right_nav li').removeClass('current');
     $('#right_nav li.about').addClass('current');
   });
   
   this.get('#/contact-us', function(context) {
-    $('body').stop().scrollTo( $('#contact_guide'), 1500, {axis:'y',offset:{left: 0, top:-80 } } );
+    $('body').stop().scrollTo( $('#contact_guide'), 800, {axis:'y',offset:{left: 0, top:0 } } );
     $('#right_nav li').removeClass('current');
     $('#right_nav li.contact').addClass('current');
   });
