@@ -1227,6 +1227,7 @@ p a:hover {
   color: #232E49;
   text-shadow: 0 1px #fff;
   padding: 5px 0;
+  font-size: 18px;
 }
 
 #marquee_pane marquee {
