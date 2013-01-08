@@ -75,7 +75,23 @@ $(document).ready(function() {
       console.log($(window).scrollTop());
       $('header').removeClass('absolute');
       $('header').addClass('fixed');
-      if($(window).scrollTop() > 629){
+      if($(window).scrollTop() > 629 && $(window).scrollTop() <= 1380){
+        $('#main_nav nav a.current').removeClass('current');
+        $('#main_nav nav a.transactional').addClass('current');
+        $("header").removeClass('absolute_hide');
+        $('header').addClass('fixed_hide');
+        $('#top_button').show();
+        $('#right_nav').addClass('hidden');
+      } else if($(window).scrollTop() > 1380 && $(window).scrollTop() <= 2010){
+        $('#main_nav nav a.current').removeClass('current');
+        $('#main_nav nav a.marketer').addClass('current');
+        $("header").removeClass('absolute_hide');
+        $('header').addClass('fixed_hide');
+        $('#top_button').show();
+        $('#right_nav').addClass('hidden');
+      } else if($(window).scrollTop() > 2010){
+        $('#main_nav nav a.current').removeClass('current');
+        $('#main_nav nav a.about').addClass('current');
         $("header").removeClass('absolute_hide');
         $('header').addClass('fixed_hide');
         $('#top_button').show();
