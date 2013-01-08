@@ -332,6 +332,15 @@ nav a .icon {
   vertical-align: middle;
 }
 
+nav a.current .icon {
+  background: url(../images/icon-sprite-light.png) no-repeat;
+}
+
+nav a.current,
+nav a:hover {
+  color: rgb(190, 230, 247) !important;
+}
+
 nav a .icon.contact {
   background-position: -35px 0;
 }
