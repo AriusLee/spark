@@ -1088,6 +1088,10 @@ ul.benefit_list li:last-child {
   color: rgba(255,255,255,0.85) !important;
 }
 
+#about_us #team_wrapper .team_member.secondary:hover p a {
+  color: yellow;
+}
+
 #about_us #team_wrapper .team_member.secondary:hover h6 {
   color: rgba(255,255,255,0.75) !important;
 }
