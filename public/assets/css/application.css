@@ -1304,7 +1304,7 @@ marquee p {
 
 img.ear_phone {
   position: absolute;
-  bottom: -40px;
+  bottom: 0;
   right: 100px;
   z-index: 1;
 }
@@ -1538,9 +1538,11 @@ footer {
   background: url(../images/bg-footer.png) repeat-x top;
 }
 
-footer a {
+footer a,
+footer a:visited {
   color: #868686;
   cursor: pointer;
+  text-decoration: none;
 }
 
 footer a:hover {
