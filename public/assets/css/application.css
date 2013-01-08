@@ -296,8 +296,8 @@ header.fixed {
 }
 
 #logo_link {
-  width: 194px;
-  height: 33px;
+  width: 220px;
+  height: 38px;
   margin-top: 10px;
   display: inline-block;
   background: url(../images/logo.png) no-repeat;
@@ -675,7 +675,7 @@ header.fixed_hide nav .signin {
   left: 0;
   text-align: left;
   bottom: 100px;
-  z-index: 99;
+  z-index: 9;
 }
 
 #gift_slider {
