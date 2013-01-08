@@ -35,6 +35,7 @@ $(document).ready(function() {
   $("li.info-1").fadeOut('fast');
   $("li.info-2").fadeOut('fast');
   $("li.info-3").fadeOut('fast');
+  $("header").addClass('absolute_hide');
 
   $('.gift_roundabout_img').roundabout({
     tilt: 0,
@@ -68,15 +69,19 @@ $(document).ready(function() {
       $('header').removeClass('absolute');
       $('header').addClass('fixed');
       if($(window).scrollTop() > 629){
+        $("header").removeClass('absolute_hide');
+        $('header').addClass('fixed_hide');
         $('#top_button').show();
         $('#right_nav').addClass('hidden');
       }
     } else {
       // If it's less than 0 (at the top), hide the toTop button.
       console.log("reached top");
+      $("header").addClass('absolute_hide');
       $('#top_button').hide();
       $('header').removeClass('fixed');
       $('header').addClass('absolute');
+      $('header').removeClass('fixed_hide');
       $('#right_nav li').removeClass('current');
       $('#right_nav').removeClass('hidden');
       

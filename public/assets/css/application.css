@@ -372,16 +372,16 @@ header .divider {
   margin-top: 8px;
 }
 
-header.absolute nav .contact,
-header.absolute nav .about,
-header.absolute nav .transactional,
-header.absolute nav .marketer {
+header.absolute_hide nav .contact,
+header.absolute_hide nav .about,
+header.absolute_hide nav .transactional,
+header.absolute_hide nav .marketer {
   display: none;
   opacity: 0;
 }
 
-header.fixed nav .demo,
-header.fixed nav .signin {
+header.fixed_hide nav .demo,
+header.fixed_hide nav .signin {
   display: none;
   opacity: 0;
 }
