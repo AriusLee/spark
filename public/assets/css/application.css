@@ -717,12 +717,9 @@ header.fixed nav .signin {
 }
 
 #gift_slider .gift_caption > ul li {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 300;
   color: rgba(255,255,255,0.85);
-  padding-left: 22px;
-  background: url(../images/arrow.png) no-repeat;
-  background-position: 0 8px;
   line-height: 1.1em;
   margin-bottom: 8px;
 }

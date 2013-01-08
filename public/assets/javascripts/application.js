@@ -31,7 +31,11 @@ var app = $.sammy(function(){
 
 
 $(document).ready(function() {
-  
+  var currentChild = 0;
+  $("li.info-1").fadeOut('fast');
+  $("li.info-2").fadeOut('fast');
+  $("li.info-3").fadeOut('fast');
+
   $('.gift_roundabout_img').roundabout({
     tilt: 0,
     minScale: 0.3,
@@ -43,6 +47,16 @@ $(document).ready(function() {
 
   $('.gift_roundabout_img')
     .bind('animationStart', function() {
+      $("li.info-0").fadeOut('fast');
+      $("li.info-1").fadeOut('fast');
+      $("li.info-2").fadeOut('fast');
+      $("li.info-3").fadeOut('fast');
+  });
+
+  $(".gift_roundabout_img")
+    .bind( 'animationEnd', function() {
+      currentChild = $(".gift_roundabout_img").roundabout("getChildInFocus");
+      $("li.info-" + currentChild).fadeIn('fast');
   });
 
   $(window).scroll(function(){
