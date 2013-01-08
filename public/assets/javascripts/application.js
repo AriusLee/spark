@@ -35,7 +35,6 @@ $(document).ready(function() {
   $("li.info-1").fadeOut('fast');
   $("li.info-2").fadeOut('fast');
   $("li.info-3").fadeOut('fast');
-  $("header").addClass('absolute_hide');
 
   $('.gift_roundabout_img').roundabout({
     tilt: 0,
