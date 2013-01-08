@@ -1279,6 +1279,8 @@ marquee p {
 
 #contact_guide .button_orange {
   margin-top: 15px;
+  position: relative;
+  z-index: 11;
 }
 
 /* Contact Us */
