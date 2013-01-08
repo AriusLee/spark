@@ -1031,40 +1031,71 @@ ul.benefit_list li:last-child {
 
 #about_us #team_wrapper {
   padding-top: 25px;
-  padding-bottom: 35px;
+  height: 700px;
 }
 
 #about_us #team_wrapper .team_member {
   float: left;
   margin-right: 30px;
   margin-bottom: 25px;
+  width: 420px;
+  margin-right: 35px;
 }
 
 #about_us #team_wrapper .team_member.primary {
   width: 500px;
-  margin-right: 50px;
+  margin-right: 25px;
 }
 
 #about_us #team_wrapper .team_member.secondary {
-  width: 320px;
+  width: 400px;
+  height: 85px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#about_us #team_wrapper .team_member.secondary:hover {
+  overflow: visible;
+  z-index: 2;
+}
+
+#about_us #team_wrapper .team_member.secondary:hover h3,
+#about_us #team_wrapper .team_member.secondary:hover h6,
+#about_us #team_wrapper .team_member.secondary:hover p {
+  background: #0071BC !important;
+  color: #fff !important;
 }
 
 #about_us #team_wrapper .team_member h3 {
   color: #0071BC;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: normal;
+  padding: 10px 15px 0;
 }
 
 #about_us #team_wrapper .team_member h6 {
   margin: 0;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: normal;
   font-style: italic;
-  padding: 4px 0 8px;
-  color: #666;
+  padding: 4px 15px 8px;
+  color: #4d4d4d;
+}
+
+#about_us #team_wrapper .team_member.secondary:hover p {
+  color: rgba(255,255,255,0.85) !important;
+}
+
+#about_us #team_wrapper .team_member.secondary:hover h6 {
+  color: rgba(255,255,255,0.75) !important;
 }
 
 #about_us #team_wrapper .team_member p {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6em;
+  padding: 0 15px 15px;
 }
 
 
