@@ -43,8 +43,7 @@ $(document).ready(function() {
 
   $('.gift_roundabout_img')
     .bind('animationStart', function() {
-      $('.gift_caption > ul').toggleClass('hidden');
-    });
+  });
 
   $(window).scroll(function(){
     // Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
