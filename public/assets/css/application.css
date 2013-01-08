@@ -715,10 +715,11 @@ header.fixed_hide nav .signin {
 }
 
 #gift_slider .gift_caption > ul li {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 300;
   color: rgba(255,255,255,0.85);
-  line-height: 1.1em;
+  text-shadow: rgba(0,0,0,0.65) 0 1px 3px;
+  line-height: 1.3em;
   margin-bottom: 8px;
 }
 
