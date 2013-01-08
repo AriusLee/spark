@@ -1059,7 +1059,7 @@ ul.benefit_list li:last-child {
 
 #about_us #team_wrapper .team_member.secondary:hover {
   overflow: visible;
-  z-index: 2;
+  z-index: 99;
 }
 
 #about_us #team_wrapper .team_member.secondary:hover h3,
