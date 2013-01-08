@@ -1040,7 +1040,12 @@ ul.benefit_list li:last-child {
   margin-right: 30px;
   margin-bottom: 25px;
   width: 420px;
+  height: 85px;
   margin-right: 35px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
 }
 
 #about_us #team_wrapper .team_member.primary {
@@ -1057,14 +1062,14 @@ ul.benefit_list li:last-child {
   cursor: pointer;
 }
 
-#about_us #team_wrapper .team_member.secondary:hover {
+#about_us #team_wrapper .team_member:hover {
   overflow: visible;
   z-index: 99;
 }
 
-#about_us #team_wrapper .team_member.secondary:hover h3,
-#about_us #team_wrapper .team_member.secondary:hover h6,
-#about_us #team_wrapper .team_member.secondary:hover p {
+#about_us #team_wrapper .team_member:hover h3,
+#about_us #team_wrapper .team_member:hover h6,
+#about_us #team_wrapper .team_member:hover p {
   background: #0071BC !important;
   color: #fff !important;
 }
@@ -1085,15 +1090,15 @@ ul.benefit_list li:last-child {
   color: #4d4d4d;
 }
 
-#about_us #team_wrapper .team_member.secondary:hover p {
+#about_us #team_wrapper .team_member:hover p {
   color: rgba(255,255,255,0.85) !important;
 }
 
-#about_us #team_wrapper .team_member.secondary:hover p a {
+#about_us #team_wrapper .team_member:hover p a {
   color: yellow;
 }
 
-#about_us #team_wrapper .team_member.secondary:hover h6 {
+#about_us #team_wrapper .team_member:hover h6 {
   color: rgba(255,255,255,0.75) !important;
 }
 
