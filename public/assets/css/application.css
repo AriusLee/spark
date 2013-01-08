@@ -675,6 +675,7 @@ header.fixed_hide nav .signin {
   left: 0;
   text-align: left;
   bottom: 100px;
+  z-index: 99;
 }
 
 #gift .action_row a {
