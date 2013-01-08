@@ -51,11 +51,13 @@ $(document).ready(function() {
     if($(window).scrollTop() > 0){
       // If it's more than or equal to 0, show the toTop button.
       console.log("start scrolling");
-      $('#top_button').show();
+      console.log($(window).scrollTop());
       $('header').removeClass('absolute');
       $('header').addClass('fixed');
-      $('#right_nav').addClass('hidden');
-      
+      if($(window).scrollTop() > 629){
+        $('#top_button').show();
+        $('#right_nav').addClass('hidden');
+      }
     } else {
       // If it's less than 0 (at the top), hide the toTop button.
       console.log("reached top");
