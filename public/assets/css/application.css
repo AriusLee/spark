@@ -670,12 +670,14 @@ header.fixed nav .signin {
   text-shadow: rgba(0,0,0,0.6) 0 1px 5px;
 }
 
-#gift .headings .action_row {
+#gift .action_row {
+  position: absolute;
+  left: 0;
   text-align: left;
-  padding: 20px 0;
+  bottom: 100px;
 }
 
-#gift .headings .action_row a {
+#gift .action_row a {
   width: 200px;
   padding: 10px 0;
 }
@@ -710,7 +712,7 @@ header.fixed nav .signin {
 
 #gift_slider .gift_caption {
   position: absolute;
-  bottom: 120px;
+  bottom: 235px;
   left: 0;
   width: 350px;
   height: 150px;
