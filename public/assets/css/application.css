@@ -678,11 +678,6 @@ header.fixed_hide nav .signin {
   z-index: 99;
 }
 
-#gift .action_row a {
-  width: 200px;
-  padding: 10px 0;
-}
-
 #gift_slider {
   position: relative;
   z-index: 1;
