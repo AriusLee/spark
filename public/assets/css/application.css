@@ -1227,6 +1227,7 @@ p a:hover {
   color: #232E49;
   text-shadow: 0 1px #fff;
   padding: 5px 0;
+  font-size: 18px;
 }
 
 #marquee_pane marquee {
@@ -1278,6 +1279,8 @@ marquee p {
 
 #contact_guide .button_orange {
   margin-top: 15px;
+  position: relative;
+  z-index: 11;
 }
 
 /* Contact Us */
