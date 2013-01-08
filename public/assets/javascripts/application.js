@@ -31,7 +31,11 @@ var app = $.sammy(function(){
 
 
 $(document).ready(function() {
-  
+  var currentChild = 0;
+  $("li.info-1").fadeOut('fast');
+  $("li.info-2").fadeOut('fast');
+  $("li.info-3").fadeOut('fast');
+
   $('.gift_roundabout_img').roundabout({
     tilt: 0,
     minScale: 0.3,
@@ -43,28 +47,43 @@ $(document).ready(function() {
 
   $('.gift_roundabout_img')
     .bind('animationStart', function() {
-      $('.gift_caption > ul').toggleClass('hidden');
-    });
+      $("li.info-0").fadeOut('fast');
+      $("li.info-1").fadeOut('fast');
+      $("li.info-2").fadeOut('fast');
+      $("li.info-3").fadeOut('fast');
+  });
+
+  $(".gift_roundabout_img")
+    .bind( 'animationEnd', function() {
+      currentChild = $(".gift_roundabout_img").roundabout("getChildInFocus");
+      $("li.info-" + currentChild).fadeIn('fast');
+  });
 
   $(window).scroll(function(){
     // Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
     if($(window).scrollTop() > 0){
       // If it's more than or equal to 0, show the toTop button.
       console.log("start scrolling");
-      $('#top_button').show();
+      console.log($(window).scrollTop());
       $('header').removeClass('absolute');
       $('header').addClass('fixed');
-      $('#right_nav').addClass('hidden');
-      
+      if($(window).scrollTop() > 629){
+        $("header").removeClass('absolute_hide');
+        $('header').addClass('fixed_hide');
+        $('#top_button').show();
+        $('#right_nav').addClass('hidden');
+      } else {
+        $('#right_nav li').removeClass('current');
+        $('#right_nav').removeClass('hidden');
+        $('#top_button').hide();
+        $("header").addClass('absolute_hide');
+        $('header').removeClass('fixed_hide');
+      }
     } else {
       // If it's less than 0 (at the top), hide the toTop button.
       console.log("reached top");
-      $('#top_button').hide();
       $('header').removeClass('fixed');
       $('header').addClass('absolute');
-      $('#right_nav li').removeClass('current');
-      $('#right_nav').removeClass('hidden');
-      
     }
   });
   
