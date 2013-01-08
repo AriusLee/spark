@@ -72,18 +72,18 @@ $(document).ready(function() {
         $('header').addClass('fixed_hide');
         $('#top_button').show();
         $('#right_nav').addClass('hidden');
+      } else {
+        $('#right_nav li').removeClass('current');
+        $('#right_nav').removeClass('hidden');
+        $('#top_button').hide();
+        $("header").addClass('absolute_hide');
+        $('header').removeClass('fixed_hide');
       }
     } else {
       // If it's less than 0 (at the top), hide the toTop button.
       console.log("reached top");
-      $("header").addClass('absolute_hide');
-      $('#top_button').hide();
       $('header').removeClass('fixed');
       $('header').addClass('absolute');
-      $('header').removeClass('fixed_hide');
-      $('#right_nav li').removeClass('current');
-      $('#right_nav').removeClass('hidden');
-      
     }
   });
   
