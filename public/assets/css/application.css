@@ -639,6 +639,11 @@ header.fixed_hide nav .signin {
   height: 690px;
 }
 
+#gift h2 {
+  text-align: left !important;
+  text-shadow: rgba(0,0,0,0.75) 0 1px 5px;
+}
+
 #gift > .container {
   position: relative;
   height: 690px;
@@ -674,7 +679,7 @@ header.fixed_hide nav .signin {
   position: absolute;
   left: 0;
   text-align: left;
-  bottom: 100px;
+  bottom: 200px;
   z-index: 9;
 }
 
