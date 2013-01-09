@@ -281,6 +281,11 @@ header.absolute {
   z-index: 98;
 }
 
+header.demo {
+  top: 0 !important;
+  position: fixed !important;
+}
+
 header.fixed {
   position: fixed;
   top: 0;
