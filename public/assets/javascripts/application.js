@@ -39,6 +39,71 @@ var app = $.sammy(function(){
 
 
 $(document).ready(function() {
+  if (location.pathname == '/demo.html') {
+    $(window).scroll(function(){
+      // Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
+      if($(window).scrollTop() > 0) {
+        // If it's more than or equal to 0, show the toTop button.
+        console.log("start scrolling");
+        $('header').removeClass('absolute');
+        $('header').addClass('fixed');
+        $("header").removeClass('absolute_hide');
+        $('header').addClass('fixed_hide');
+      } else {
+        // If it's less than 0 (at the top), hide the toTop button.
+        console.log("reached top");
+        $('header').removeClass('fixed');
+        $('header').addClass('absolute');
+        $("header").addClass('absolute_hide');
+        $('header').removeClass('fixed_hide');
+      }
+    });
+  } else {
+    $(window).scroll(function(){
+      // Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
+      if($(window).scrollTop() > 0){
+        // If it's more than or equal to 0, show the toTop button.
+        console.log("start scrolling");
+        console.log($(window).scrollTop());
+        $('header').removeClass('absolute');
+        $('header').addClass('fixed');
+        if($(window).scrollTop() > 629 && $(window).scrollTop() <= 1380){
+          $('#main_nav nav a.current').removeClass('current');
+          $('#main_nav nav a.transactional').addClass('current');
+          $("header").removeClass('absolute_hide');
+          $('header').addClass('fixed_hide');
+          $('#top_button').show();
+          $('#right_nav').addClass('hidden');
+        } else if($(window).scrollTop() > 1380 && $(window).scrollTop() <= 2010){
+          $('#main_nav nav a.current').removeClass('current');
+          $('#main_nav nav a.marketer').addClass('current');
+          $("header").removeClass('absolute_hide');
+          $('header').addClass('fixed_hide');
+          $('#top_button').show();
+          $('#right_nav').addClass('hidden');
+        } else if($(window).scrollTop() > 2010){
+          $('#main_nav nav a.current').removeClass('current');
+          $('#main_nav nav a.about').addClass('current');
+          $("header").removeClass('absolute_hide');
+          $('header').addClass('fixed_hide');
+          $('#top_button').show();
+          $('#right_nav').addClass('hidden');
+        } else {
+          $('#right_nav li').removeClass('current');
+          $('#right_nav').removeClass('hidden');
+          $('#top_button').hide();
+          $("header").addClass('absolute_hide');
+          $('header').removeClass('fixed_hide');
+        }
+      } else {
+        // If it's less than 0 (at the top), hide the toTop button.
+        console.log("reached top");
+        $('header').removeClass('fixed');
+        $('header').addClass('absolute');
+      }
+    });
+  }
+
   var currentChild = 0;
   $("li.info-1").fadeOut('fast');
   $("li.info-2").fadeOut('fast');
@@ -85,50 +150,6 @@ $(document).ready(function() {
     .bind( 'animationEnd', function() {
       currentChild = $(".gift_roundabout_img").roundabout("getChildInFocus");
       $("li.info-" + currentChild).fadeIn('fast');
-  });
-
-  $(window).scroll(function(){
-    // Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
-    if($(window).scrollTop() > 0){
-      // If it's more than or equal to 0, show the toTop button.
-      console.log("start scrolling");
-      console.log($(window).scrollTop());
-      $('header').removeClass('absolute');
-      $('header').addClass('fixed');
-      if($(window).scrollTop() > 629 && $(window).scrollTop() <= 1380){
-        $('#main_nav nav a.current').removeClass('current');
-        $('#main_nav nav a.transactional').addClass('current');
-        $("header").removeClass('absolute_hide');
-        $('header').addClass('fixed_hide');
-        $('#top_button').show();
-        $('#right_nav').addClass('hidden');
-      } else if($(window).scrollTop() > 1380 && $(window).scrollTop() <= 2010){
-        $('#main_nav nav a.current').removeClass('current');
-        $('#main_nav nav a.marketer').addClass('current');
-        $("header").removeClass('absolute_hide');
-        $('header').addClass('fixed_hide');
-        $('#top_button').show();
-        $('#right_nav').addClass('hidden');
-      } else if($(window).scrollTop() > 2010){
-        $('#main_nav nav a.current').removeClass('current');
-        $('#main_nav nav a.about').addClass('current');
-        $("header").removeClass('absolute_hide');
-        $('header').addClass('fixed_hide');
-        $('#top_button').show();
-        $('#right_nav').addClass('hidden');
-      } else {
-        $('#right_nav li').removeClass('current');
-        $('#right_nav').removeClass('hidden');
-        $('#top_button').hide();
-        $("header").addClass('absolute_hide');
-        $('header').removeClass('fixed_hide');
-      }
-    } else {
-      // If it's less than 0 (at the top), hide the toTop button.
-      console.log("reached top");
-      $('header').removeClass('fixed');
-      $('header').addClass('absolute');
-    }
   });
   
   $('#top_button').click(function() {
