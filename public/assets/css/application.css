@@ -1433,8 +1433,9 @@ img.mark {
 
 #contact_wrapper .right_col {
   width: 300px;
-  margin-top: 74px;
-  padding: 15px;
+  margin-top: 48px;
+  margin-right: -5px;
+  padding: 15px 15px 15px 15px;
   background: rgba(255,255,255,0.15);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1456,8 +1457,9 @@ img.mark {
 
 .contact_info_list span.pull_right {
   font-size: 12px;
-  font-style: italic;
-  color: #06263C;
+//  font-style: italic;
+//  color: #06263C;
+  color: #ccc
 }
 
 .contact_info_list a {
