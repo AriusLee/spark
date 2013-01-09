@@ -68,7 +68,9 @@ $(document).ready(function() {
     maxScale: 0.4,
     autoplay: true,
     enableDrag: true,
-    autoplayDuration: 5000
+    autoplayDuration: 5000,
+    btnNext: "#gift_slider .btn_next",
+    btnPrev: "#gift_slider .btn_prev"
   });
 
   $('.gift_roundabout_img')

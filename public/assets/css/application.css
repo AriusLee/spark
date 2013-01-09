@@ -782,6 +782,28 @@ header.fixed_hide nav .signin {
   height: 100%;
 }
 
+#gift_slider .btn_next,
+#gift_slider .btn_prev {
+  position: absolute;
+  z-index: 9999;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  bottom: 100px;
+}
+
+#gift_slider .btn_next {
+  border: 10px solid transparent;
+  border-left: 10px solid #fff;
+  right: 0;
+}
+
+#gift_slider .btn_prev {
+  border: 10px solid transparent;
+  border-right: 10px solid #fff;
+  left: 400px;
+}
+
 #gift_slider .gift_roundabout_img {
   position: absolute;
   top: 210px;
