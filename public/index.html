@@ -52,7 +52,19 @@
             Demo
           </a>
           <span class="divider signin"></span>
-          <span id="partner_session" class="signin"><span>Already a partner?</span><a class="button_gray">Sign In</a></span>
+          <span id="partner_session" class="signin"><span>Already a partner?</span><a class="button_gray signin_link">Sign In</a></span>
+          <div id="login_lightbox" class="hide">
+            <form action="https://rewards.sparkcommerce.com/login" method="post">
+              <p>Email</p>
+              <div class="textbox"><input name="email" type="email" /></div>
+              <p>Password</p>
+              <div class="textbox"><input name="password" type="password" /></div>
+              <div class="clearfix"></div>
+              <input class="button_orange_2" value="Sign In" />
+              <div class="clearfix"></div>
+              <div class="login_alternate"><a href="https://rewards.sparkcommerce.com/accounts/password/reset/">Forgot</a> your password? <a href="https://rewards.sparkcommerce.com/accounts/register/">Need an account?</a></div>
+            </form>
+          </div>
         </nav>
       </div>
     </div><!-- /#main_nav -->

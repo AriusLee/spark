@@ -43,6 +43,24 @@ $(document).ready(function() {
   $("li.info-1").fadeOut('fast');
   $("li.info-2").fadeOut('fast');
   $("li.info-3").fadeOut('fast');
+  
+  $('.signin_link').click(function(e) {
+    e.stopPropagation();
+    if ($('#login_lightbox').hasClass('hide')) {
+      $('#login_lightbox').removeClass('hide');
+    }
+    else {
+      $('#login_lightbox').addClass('hide');
+    }
+  });
+  
+  $('body').click(function() {
+    $('#login_lightbox').addClass('hide');
+  });
+  
+  $('#login_lightbox').click(function(e) {
+    e.stopPropagation();
+  });
 
   $('.gift_roundabout_img').roundabout({
     tilt: 0,
