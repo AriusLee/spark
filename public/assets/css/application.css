@@ -202,8 +202,31 @@ h1, h2, h3, h4, h5, p {
   cursor: pointer;
 }
 
-.button_orange:hover {
-  color: #fff;
+.button_orange:hover,
+.button_orange_2:hover {
+  color: #fff !important;
+}
+
+.button_orange_2 {
+  cursor: pointer;
+  padding: 8px 0 9px;
+  font-size: 17px;
+  outline: none;
+  text-align: center;
+  text-shadow: 0 -1px #d27b00;
+  color: #faead7 !important;
+  border: 1px solid #a96b30;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.4);
+  background: #faa301; /* Old browsers */
+  background: -moz-linear-gradient(top,  #faa301 0%, #fa6b00 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#faa301), color-stop(100%,#fa6b00)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #faa301 0%,#fa6b00 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #faa301 0%,#fa6b00 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #faa301 0%,#fa6b00 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #faa301 0%,#fa6b00 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faa301', endColorstr='#fa6b00',GradientType=0 ); /* IE6-9 */
+  
 }
 
 .button_gray {
@@ -224,6 +247,10 @@ h1, h2, h3, h4, h5, p {
   background: linear-gradient(to bottom,  #f9fafa 0%,#cfd1d1 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fafa', endColorstr='#cfd1d1',GradientType=0 ); /* IE6-9 */
   
+}
+
+.button_gray:hover {
+  color: #404950 !important;
 }
 
 #top_button {
@@ -252,6 +279,11 @@ header.absolute {
   left: 0;
   right: 0;
   z-index: 98;
+}
+
+header.demo {
+  top: 0 !important;
+  position: fixed !important;
 }
 
 header.fixed {
@@ -287,7 +319,7 @@ header.fixed {
 
 #main_nav {
   position: relative;
-  z-index: 1;
+  z-index: 100;
   height: 60px;
   background: #fff;
   -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.3);
@@ -305,6 +337,7 @@ header.fixed {
 
 nav {
   float: right;
+  position: relative;
 }
 
 nav a {
@@ -338,7 +371,7 @@ nav a.current .icon {
 
 nav a.current,
 nav a:hover {
-  color: rgb(190, 230, 247) !important;
+  color: #008923 !important;
 }
 
 nav a .icon.contact {
@@ -393,6 +426,56 @@ header.fixed_hide nav .demo,
 header.fixed_hide nav .signin {
   display: none;
   opacity: 0;
+}
+
+#login_lightbox {
+  width: 250px;
+  background: #365870;
+  color: #fff;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,0.45);
+  -webkit-transition: top 0.1s;
+  -moz-transition: top 0.1s;
+  -o-transition: top 0.1s;
+  transition: top 0.1s;
+}
+
+#login_lightbox.hide {
+  top: -350px;
+}
+
+#login_lightbox .textbox input {
+  width: 230px !important;
+}
+
+#login_lightbox .button_orange_2 {
+  width: 248px;
+  margin: 10px 0 5px;
+}
+
+#login_lightbox p {
+  padding: 8px 0 2px;
+  color: rgba(255,255,255,0.45) !important;
+  font-weight: 300;
+}
+
+#login_lightbox .login_alternate {
+  text-align: center;
+  font-size: 11px;
+  font-style: italic;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.login_alternate a {
+  display: inline;
+  color: yellow !important;
+  text-shadow: none !important;
+  font-size: 11px !important;
 }
 
 #right_nav {
@@ -697,6 +780,28 @@ header.fixed_hide nav .signin {
   z-index: 1;
   width: 100%;
   height: 100%;
+}
+
+#gift_slider .btn_next,
+#gift_slider .btn_prev {
+  position: absolute;
+  z-index: 9999;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  bottom: 100px;
+}
+
+#gift_slider .btn_next {
+  border: 10px solid transparent;
+  border-left: 10px solid #fff;
+  right: 0;
+}
+
+#gift_slider .btn_prev {
+  border: 10px solid transparent;
+  border-right: 10px solid #fff;
+  left: 400px;
 }
 
 #gift_slider .gift_roundabout_img {
@@ -1360,7 +1465,7 @@ img.ear_phone {
   width: 400px;
 }
 
-.contact_table td.field_col .textbox {
+.textbox {
   border-top: 1px solid #fff;
   border-radius: 3px;
   padding: 4px 10px;
@@ -1433,8 +1538,9 @@ img.mark {
 
 #contact_wrapper .right_col {
   width: 300px;
-  margin-top: 74px;
-  padding: 15px;
+  margin-top: 48px;
+  margin-right: -5px;
+  padding: 15px 15px 15px 15px;
   background: rgba(255,255,255,0.15);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1456,8 +1562,9 @@ img.mark {
 
 .contact_info_list span.pull_right {
   font-size: 12px;
-  font-style: italic;
-  color: #06263C;
+//  font-style: italic;
+//  color: #06263C;
+  color: #ccc
 }
 
 .contact_info_list a {

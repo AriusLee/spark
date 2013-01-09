@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Spark Commerce</title>
+  <title>Spark Commerce - Giving Incentives for Transacting (GIFT)</title>
+  <meta name="description" content="Spark Commerce provides rewards, gifts and other scalable solutions that catalyze commerce online, in-store and on mobile.">
   <link rel="icon" type="image/ico" href="/favicon.ico"/>
   <link rel="stylesheet" type="text/css" href="assets/css/application.css" />
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
@@ -51,7 +52,19 @@
             Demo
           </a>
           <span class="divider signin"></span>
-          <span id="partner_session" class="signin"><span>Already a partner?</span><a class="button_gray">Sign In</a></span>
+          <span id="partner_session" class="signin"><span>Already a partner?</span><a class="button_gray signin_link">Sign In</a></span>
+          <div id="login_lightbox" class="hide">
+            <form action="https://rewards.sparkcommerce.com/login" method="post">
+              <p>Email</p>
+              <div class="textbox"><input name="email" type="email" /></div>
+              <p>Password</p>
+              <div class="textbox"><input name="password" type="password" /></div>
+              <div class="clearfix"></div>
+              <input class="button_orange_2" value="Sign In" />
+              <div class="clearfix"></div>
+              <div class="login_alternate"><a href="https://rewards.sparkcommerce.com/accounts/password/reset/">Forgot</a> your password? <a href="https://rewards.sparkcommerce.com/accounts/register/">Need an account?</a></div>
+            </form>
+          </div>
         </nav>
       </div>
     </div><!-- /#main_nav -->
@@ -148,6 +161,8 @@
               <li><img src="assets/images/roundabouts/3.png" /></li>
               <li><img src="assets/images/roundabouts/4.png" /></li>
             </ul>
+            <div class="btn_next"></div>
+            <div class="btn_prev"></div>
           </div><!-- /#gift_slider -->
           <div class="action_row">
             <a href="" class="button_blue">Get Started</a>
@@ -286,23 +301,23 @@
         <h2><img src="assets/images/simple-targeted.png" alt="Customer Acquisition That is SIMPLE & TARGETED" /></h2>
         <div class="info_row">
           <span>
-            <h4>Acquire Shoppers, not Couponers</h4>
-            <p>Unlike affiliate codes, traditional coupons or daily deals, our GIFT network allows you to stop discounting. We target based on purchasing behavior.</p>
+            <h4>Acquire Shoppers, Not Couponers</h4>
+            <p>Unlike using affiliate codes, traditional coupons or daily deals, with our GIFT network you can stop discounting. We target based on purchasing behavior.</p>
           </span>
           <span class="divider"></span>
           <span>
-            <h4>Boost brand awareness on trusted commerce sites</h4>
+            <h4>Boost Brand Awareness On Trusted Sites</h4>
             <p>Benefit from brand-friendly placement that we work to deliver on your behalf.</p>
           </span>
           <div class="clearfix"></div>
           <span>
             <h4>Works Online / Mobile / In-Store</h4>
-            <p>Drive traffic and trial from online consumers. Drive them to shop in your store. Regardless of type, you can Measure impact in real time and Optimize future campaigns with A/B Testing and more.</p>
+            <p>Drive traffic and trial from online consumers. Drive them to shop in your store. Regardless of type, you can measure impact in real time and optimize future campaigns with A/B testing and more.</p>
           </span>
           <span class="divider"></span>
           <span>
             <h4>Pay Only For Results</h4>
-            <p>Gifts are 10 times more effective at driving customers in the door than any other promotional activity. You pay us only when it customers spend.</p>
+            <p>Gifts are 10 times more effective at driving customers in the door than any other promotional activity. You pay us only when customers spend.</p>
           </span>
           <div class="clearfix"></div>
           <a href="/#" class="button_blue">Learn More</a>
@@ -333,27 +348,27 @@
               
               <div class="panel" id="team">
                 <h2>Team</h2>
-                <p>The Spark Commerce team is comprised of passionate people with a history of innovation and extensive ecommerce experience. The team is uniquely positioned to deliver a world-class solution with unrivaled service and support.</p>
+<!--                <p>The Spark Commerce team is comprised of passionate people with a history of innovation and extensive ecommerce experience. The team is uniquely positioned to deliver a world-class solution with unrivaled service and support.</p> -->
                 <div id="team_wrapper">
                   <div class="team_member">
-                    <h3>Andrew Moss, Chief Executive Officer</h3>
+                    <h3>Andrew Moss, Chief Executive Officer <a href="http://www.linkedin.com/in/andrewjmoss"><img src="assets/images/linkedin-icon.png"></a></h3>
                     <h6>Andrew is responsible for Spark&#8217;s overall vision and strategic direction</h6>
                     <p>Spark is the 4th enterprise Andrew has been principally involved with from inception, including BuyWithMe, Customink and Flagg Street Capital.   Most recently, Andrew managed Wingate Advisors, a strategic consulting firm providing multi-faceted guidance to investors and owners/entrepreneurs about digital and transactional business models.  Andrew was Founder/Director of <a href="http://buywithme.com">BuyWithMe.com</a>, a leading social e-commerce company that competed with Groupon and Living Social, from January 2009 until it was sold to Gilt Groupe in November 2011.  Andrew conceived and launched the business model, raising $25M+ venture capital from Matrix Partners and Bain Ventures and scaling the concept into a national company generating over $30M/year annual sales. Andrew also has a legal background with a law degree from NYU School of Law, JD 2001 and worked as a corporate attorney at Davis Polk & Wardwell and Highfields Capital.</p>
                   </div>
                   <div class="team_member">
-                    <h3>Janssen Choong, Chief Technical Officer</h3>
+                    <h3>Janssen Choong, Chief Technical Officer <a href="http://www.linkedin.com/in/jchoong"><img src="assets/images/linkedin-icon.png"></a></h3>
                     <h6>Janssen leads the technology strategy, architecture and relationships of the Spark platform.</h6>
-                    <p>Prior to Spark, Janssen was a partner at Horizon Connect, a strategic technology advisory firm. A hands on technology veteran, he has been involved in building solutions at scale in the travel, automotive, telecommunications & finance sectors, including <a href="http://www.hotwire.com/">Hotwire.com</a>.   In addition, he founded CouponHq, eMason (a rapid web development firm) & <a href="http://kereta.com/">Kereta.com</a>, an automotive classifieds venture. Janssen graduated from the University of Pennsylvania with a BSE in Computer Science & Engineering and a BA in Psychology.</p>
+                    <p>Prior to Spark, Janssen was a partner at Horizon Connect, a strategic technology advisory firm. A hands on technology veteran, he has been involved in building solutions at scale in the travel, automotive, telecommunications & finance sectors, including <a href="http://www.hotwire.com/">Hotwire.com</a>.   In addition, he founded CouponHq, eMason (a rapid web development firm) & a Malaysian <a href="http://kereta.com/">Kereta.com</a>, an automotive classifieds venture. Janssen graduated from the University of Pennsylvania with a BSE in Computer Science & Engineering and a BA in Psychology.</p>
                   </div>
                   <div class="team_member">
-                    <h3>Mathew Reason, VP of Partner Development</h3>
+                    <h3>Mathew Reason, VP of Partner Development <a href="http://www.linkedin.com/in/mattreason"><img src="assets/images/linkedin-icon.png"></a></h3>
                     <h6>Matt cultivates and manages Spark&#8217;s network of partners and content providers.</h6>
-                    <p>Prior to Spark, Matt led the Boston office at Gilt City, a subsidiary of the Gilt Groupe.  The Gilt Groupe had acquired Matt’s last company, BuyWithMe, where he began as the first business development professional, and part of the founding team.  Matt successfully launched and scaled BuyWithMe&#8217;s first market into one which was highly profitable, generating over 2M+ in yearly sales. Matt earned a BBA with highest honors from Emory&#8217;s Goizueta Business School.</p>
+                    <p>Prior to Spark, Matt led the Boston office at Gilt City, a subsidiary of the Gilt Groupe.  The Gilt Groupe had acquired Matt's last company, BuyWithMe, where he began as the first business development professional, and part of the founding team.  Matt successfully launched and scaled BuyWithMe&#8217;s first market into one which was highly profitable, generating over 2M+ in yearly sales. Matt earned a BBA with highest honors from Emory&#8217;s Goizueta Business School.</p>
                   </div>
                   <div class="team_member">
-                    <h3>Roger Zimmermann, Director of Engineering</h3>
+                    <h3>Roger Zimmermann, Director of Engineering <a href="http://www.linkedin.com/in/zimmermannroger"><img src="assets/images/linkedin-icon.png"></a></h3>
                     <h6>Roger is responsible for the primary implementation and delivery of the Spark platform</h6>
-                    <p>Roger has over ten years of experience in software development of consumer and enterprise software with a focus on security and privacy.<br/>Roger has started his career at IBM Research Zurich Laboratory focusing on privacy, cryptography, identity and has received an industry award for his contributions to a security hardware specification incorporated in millions of PCs. He then joined a startup in Vancouver, Canada to lead the development of software that gives users a seamless experience around identity having over hundred thousands of daily users. Wanting to give back more to humanity he decided to provide his skill sets to a philanthropic startup headquartered in Canada and operated from Malaysia. Here he led a team to convert residential programs into online learning experiences for worldwide market, simplifying its facilitation and increasing sales and reach. Roger holds a Master of Science from ETH Zurich.</p>
+                    <p>Roger has over ten years of experience in software development of consumer and enterprise software with a focus on security and privacy. Roger started his career at IBM Research Zurich Laboratory focusing on privacy, cryptography, identity and has received an industry award for his contributions to a security hardware specification incorporated in millions of PCs. He then joined a startup in Vancouver, Canada to lead the development of software that gives users a seamless experience around identity having over hundred thousands of daily users. Wanting to give back more to humanity he decided to provide his skill sets to a philanthropic startup headquartered in Canada and operated from Malaysia. Here he led a team to convert residential programs into online learning experiences for worldwide market, simplifying its facilitation and increasing sales and reach. Roger holds a Master of Science from ETH Zurich.</p>
                   </div>
                   <div class="clearfix"></div>
                 </div><!-- /#team_wrapper -->
@@ -362,23 +377,22 @@
               <div class="panel" id="press">
                 <h2>Press</h2>
                 <table id="news_table" >
-                  <tr>
-                    <td class="logo_col"><img src="assets/images/samples/logo.png" alt="" /></td>
-                    <td class="text_col">
-                      <h3>How CEOs Can Personally Recruit Top Talent : 500friends&#8217; Approach</h3>
-                      <p>I recently received a note from the CEO of a company in San Francisco who wanted me to check out a letter posted on his website that he uses to attract talented employees. I&#8217;m impressed with his unique approach to hiring in what is an incredibly competitive market: software engineers in Silicon Valley. Before I get more into his hiring strategy, let me tell you more about this CEO... <a>READ MORE</a></p>
-                      <div class="time_stamp">Posted on Nov 28, 2012, by Inc.com</div>
-                    </td>
-                  </tr>
+		  <tr>
+		    <td class="logo_col">
+		      <a href="http://www.prnewswire.com/news-releases/spark-commerce-offers-new-online-to-offline-promotions--analytics-platform-185562\
+122.html"><img src="images/prnewswire.gif"></a>
+		    </td>
+		    <td class="text_col">
+		      <h3><a href="http://www.prnewswire.com/news-releases/spark-commerce-offers-new-online-to-offline-promotions--analytics-platform-185562122.html">Spark Commerce Offers New Online-to-Offline Promotions & Analytics Platform</a></h3>
+		      <p>
+			Spark Commerce has been working with select SMBs and marketing companies to help them improve their marketing reach and ROI using a unique card-linked and mobile redemption & analytics system.  Tools for increasing social activity and engagement are incorporated into the platform.
+		      </p>
+                      <div class="time_stamp">PRNewswire, Jan 3rd, 2013</div>
+		    </td>
+		  </tr>
                   <tr class="empty_row"><td></td></tr>
-                  <tr>
-                    <td class="logo_col"><img src="assets/images/samples/logo-2.png" alt="" /></td>
-                    <td class="text_col">
-                      <h3>eCampus Launches Loyalty Program</h3>
-                      <p>Students returning to college campuses and high schools in the next few weeks will be able to take advantage of a new loyalty rewards program from eCampus.com, an online book retailer that sells and rents books to high school and college students. The company&#8217;s newly launched eWards loyalty program enables students to save money on future textbook purchases and retails... <a>READ MORE</a></p>
-                      <div class="time_stamp">Loyalty360.org, Aug 16, 2012</div>
-                    </td>
-                  </tr>
+
+
                 </table>
               </div><!-- /#press -->
               
@@ -387,14 +401,13 @@
                 <span class="text_col">
                   <h3>Join Our Team</h3>
                   <p>Spark Commerce is building unique and scalable solutions that work for top brands and category leaders to improve their bottom lines.  Come team up alongside top entrepreneurs and technologists to help create the leading platform for catalyzing commerce online, offline and mobile.</p>
-                  <p><img src="assets/images/envelop.png" alt="" />&nbsp;&nbsp;&nbsp;If you are intellectually curious, logical, ethical and driven please apply for an open position or submit your resume to <a href="mailto:jobs@sparkcommerce.com">jobs@sparkcommerce.com</a>.</p>
+                  <p>
+		    If you are intellectually curious, logical, ethical and driven please apply for an open position or submit your resume to <a href="mailto:careers@sparkcommerce.com"> <img src="assets/images/envelop.png" alt="" /> careers@sparkcommerce.com</a>.</p>
                 </span>
                 <span class="jobs_col">
-                  <a href="" class="job_link">Manager, Customer Success</a>
-                  <a href="" class="job_link">Lead Developer Advocate</a>
-                  <a href="" class="job_link">Ruby on Rails Extraordinaire</a>
-                  <a href="" class="job_link">Marketing Manager (B2B)</a>
-                  <a href="" class="job_link">Account Executive (Inside Sales)</a>
+                  <a href="contact.html" class="job_link">Lead Designer</a>
+                  <a href="contact.html" class="job_link">Lead Developer - Python/Django</a>
+                  <a href="contact.html" class="job_link">Director of Sales</a>
                 </span>
               </div><!-- /#careers -->
               
@@ -429,6 +442,21 @@
     </div>
   </footer>
   <div id="top_button"><a href="/#"><span class="inner_text">Back To Top</span><span class="icon"></a></span></div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33109783-1']);
+  _gaq.push(['_setDomainName', 'sparkcommerce.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 </body>
 
