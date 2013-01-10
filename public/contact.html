@@ -13,6 +13,7 @@
   <script type="text/javascript" src="assets/javascripts/jquery.scrollTo-1.4.3.1-min.js"></script>
   <script type="text/javascript" src="assets/javascripts/jquery.serialScroll-1.2.1.js"></script>
   <script type="text/javascript" src="assets/javascripts/jquery.localscroll-1.2.5.js"></script>
+  <script type="text/javascript" src="assets/javascripts/jquery.form.js"></script>
   <script type="text/javascript" src="assets/javascripts/sammy.js"></script>
   <script type="text/javascript" src="assets/javascripts/coda-slider.js"></script>
   <script type="text/javascript" src="assets/javascripts/roundabout.js"></script>
@@ -52,19 +53,7 @@
             Demo
           </a>
           <span class="divider signin"></span>
-          <span id="partner_session" class="signin"><span>Already a partner?</span><a class="button_gray signin_link">Sign In</a></span>
-          <div id="login_lightbox" class="hide">
-            <form action="https://rewards.sparkcommerce.com/login" method="post">
-              <p>Email</p>
-              <div class="textbox"><input name="email" type="email" /></div>
-              <p>Password</p>
-              <div class="textbox"><input name="password" type="password" /></div>
-              <div class="clearfix"></div>
-              <input class="button_orange_2" value="Sign In" />
-              <div class="clearfix"></div>
-              <div class="login_alternate"><a href="https://rewards.sparkcommerce.com/accounts/password/reset/">Forgot</a> your password? <a href="https://rewards.sparkcommerce.com/accounts/register/">Need an account?</a></div>
-            </form>
-          </div>
+          <span id="partner_session" class="signin"><span>Already a partner?</span><a class="button_gray">Sign In</a></span>
         </nav>
       </div>
     </div><!-- /#main_nav -->
@@ -74,7 +63,8 @@
     <div id="contact_wrapper">
       <div class="container">
         <div class="left_col">
-            <form action="https://demo.sparkcommerce.com/corpsite/contact/" method="post">
+<div id="response"></div>
+            <form id="form-contact" action="https://demo.sparkcommerce.com/corpsite/contact/" method="post">
           <h1>Contact Us</h1>
           <p><strong>Hi There</strong> Required Fields are marked *</p>
           <table class="contact_table">
@@ -203,17 +193,7 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript">
-    (function() {
-    $('form').submit(function() {
-    var faults = $('input').filter(function() {
-        // filter input elements to required ones that are empty
-        return $(this).data('required') && $(this).val() === "";
-    }).css("background-color", "red"); // make them attract the eye
-    if(faults.length) return false; // if any required are empty, cancel submit
-});
-    })()
-    </script>
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -228,6 +208,86 @@
   })();
 
 </script>
+
+
+<script type="text/javascript">
+(function() {
+    $('#form-contact').ajaxForm({
+        target: '#response',
+        // Validation should go in here
+        beforeSubmit: function( formData, jqForm, options ) {
+            var errors = [];
+            
+            var form = jqForm[0];
+            if ( !form.first_name.value ) {
+                errors.push('First name must be filled');
+            }
+            if ( !form.last_name.value ) {
+                errors.push('Last name must be filled');
+            }
+            if ( !form.email.value ) {
+                errors.push('E-mail must be filled');
+            }
+            if ( !form.message.value ) {
+                errors.push('Message must be filled');
+            }
+
+            if ( errors.length ) {
+                console.log('oops error!');
+                var error_list = $('<ul></ul>');
+                for ( i = 0; i < errors.length; i++ ) {
+                    error_list.append('<li>'+errors[i]+'</li>');
+                }
+                $('#response').hide().removeClass('success').addClass('error').append(error_list).fadeIn('slow');
+
+                return false;
+            }
+            else {
+                console.log('validated');
+                return true;
+            }
+        },
+
+        // Handle the ajax response from the server
+        // for normal html responses, the first argument to the success callback 
+        // is the XMLHttpRequest object's responseText property 
+
+        // if the ajaxForm method was passed an Options Object with the dataType 
+        // property set to 'xml' then the first argument to the success callback 
+        // is the XMLHttpRequest object's responseXML property 
+
+        // if the ajaxForm method was passed an Options Object with the dataType 
+        // property set to 'json' then the first argument to the success callback 
+        // is the json data object returned by the server 
+        success: function( responseText, statusText, xhr, $form ) {
+            $('#response').hide().removeClass('error').addClass('success').html('<p>'+responseText+'!</p>').fadeIn('slow');
+            $('#form-contact').hide();
+        }
+    });
+})()
+</script>
+
+<style type="text/css">
+    #response {
+        float: left;
+        width: 460px;
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    #response.error {
+        color: #cc0000;
+        background: #ffeeee;
+        border: 1px solid #cc0000;
+    }
+
+    #response.success {
+        color: #339933;
+        background: #eeffee;
+        border: 1px solid #99cc99;
+    }
+</style>
+
 </body>
 
 </html>
