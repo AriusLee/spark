@@ -1417,7 +1417,8 @@ marquee p {
   position: relative;
 }
 
-#contact_wrapper {
+#contact_wrapper,
+#demo_wrapper {
   background: #365870;
 }
 
@@ -1581,12 +1582,7 @@ img.mark {
   text-align: center !important;
 }
 
-#demo_wrapper h1 {
-  color: #333;
-}
-
 #demo_wrapper p.align_center {
-  color: #666;
   font-size: 18px;
 }
 
@@ -1594,6 +1590,7 @@ img.mark {
   height: 8px;
   background: url(../images/divider-demo.png) no-repeat center center;
   margin: 15px 0 30px;
+  opacity: 0.4;
 }
 
 #demo_wrapper table.contact_table {
@@ -1601,7 +1598,6 @@ img.mark {
 }
 
 #demo_wrapper .contact_table .label_col {
-  color: #666;
   width: 110px;
 }
 
@@ -1610,12 +1606,9 @@ img.mark {
   vertical-align: middle;
 }
 
-#demo_wrapper .submit_button {
-  border: none;
-  outline: none;
-  width: 405px;
-  height: 40px;
-  background: url(../images/submit-button.png) no-repeat;
+#demo_wrapper .button_orange_2 {
+  width: 205px;
+  padding: 8px 0 10px;
   margin-bottom: 25px;
 }
 
@@ -1630,21 +1623,24 @@ img.mark {
 .contact_info_table h3 {
   font-size: 24px;
   font-weight: 300;
-  color: #4d4d4d;
 }
 
 #demo_wrapper .contact_info_table p {
   font-size: 16px;
-  color: #666;
+  margin-bottom: 20px;
 }
 
 #demo_wrapper .contact_info_table p a {
-  color: #c00;
+  color: yellow;
   text-decoration: none;
 }
 
 #demo_wrapper .contact_info_table p a:hover {
   text-decoration: underline;
+}
+
+#demo_wrapper #contact_guide {
+  border-top: none;
 }
 
 /* Footer */
