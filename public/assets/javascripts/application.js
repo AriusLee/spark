@@ -39,7 +39,7 @@ var app = $.sammy(function(){
 
 
 $(document).ready(function() {
-  if (location.pathname == '/demo.html') {
+  if (location.pathname == '/demo.html' || location.pathname == '/contact.html') {
     $(window).scroll(function(){
       // Check weather the user has scrolled down (if "scrollTop()"" is more than 0)
       if($(window).scrollTop() > 0) {
